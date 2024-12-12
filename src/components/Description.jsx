@@ -1,7 +1,7 @@
 import React from "react"
 import ImagePerfil from "./ImagePerfil"
 import { ReactTyped } from "react-typed"
-import ButtonHome from "./ButtonHome"
+import Button from "./Button"
 
 
  export default function Description (){
@@ -19,7 +19,7 @@ return(
                 loop
                 /> 
             <p className="font-mono text-white text-lg leading-8 w-[400px] break-words"> Seja bem-vindo ao meu perfil! Aqui você vai conhecer um pouco sobre minha tragetória na área de desenvolvimento web!</p>
-            <ButtonHome/>
+            <Button name="About-me"/>
         </div>
         <div className="flex h-screen items-center">
             <ImagePerfil/>
