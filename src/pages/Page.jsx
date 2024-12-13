@@ -8,7 +8,7 @@ function App (){
     return(
         <>
             <Header/>
-            <Description/>
+            <Description />
             <div className="border-b-[1px]"></div>
             <CardsAbout/>
             
