@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/perfil.jpg";
+import Logo from "../assets/PerfilPortifolio.jpg";
 
 export default function ImagePerfil() {
     return (
