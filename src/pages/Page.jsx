@@ -1,6 +1,7 @@
 import Description from "../components/Description";
 import Header from "../components/Header"
 import CardsAbout from "../components/CardsAbout";
+import CardsProject from "../components/CardsProject";
 
 
 
@@ -9,8 +10,8 @@ function App (){
         <>
             <Header/>
             <Description />
-            <div className="border-b-[1px]"></div>
             <CardsAbout/>
+            <CardsProject/>
             
         </>
     )

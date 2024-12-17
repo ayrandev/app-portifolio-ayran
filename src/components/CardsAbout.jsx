@@ -17,22 +17,22 @@ export default function CardsAbout (){
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-      }
+        }
     
-        const CurriculoDownload = () => {
-          const fileUrl = "../public/cv.pdf"
-          const link = document.createElement("a");
-          link.href = fileUrl;
-          link.download = "Curriculo_AyranDev.pdf";
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
+     const CurriculoDownload = () => {
+        const fileUrl = "../public/cv.pdf"
+        const link = document.createElement("a");
+        link.href = fileUrl;
+        link.download = "Curriculo_AyranDev.pdf";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
         }
    
     return(
-        <section id="CardsAbout" className="h-screen  bg-zinc-950 ">
-            <div className="flex justify-evenly pt-16 ">
-                <div className="flex justify-center border-[1px] h-[400px] w-[350px] border-double border-purple-600 hover:border-purple-900 rounded-xl ">
+        <section id="CardsAbout" className="h-screen  bg-zinc-950">
+            <div className="flex justify-evenly pt-32 ">
+                <div className="flex justify-center border-[1px] h-[400px] w-[350px] border-double border-purple-600 hover:border-purple-900 rounded-xl">
                 <div>
                         <h1 className=" pt-6 font-mono text-center text-purple-600 text-3xl">Soft-Skills</h1>
                         <span>
@@ -60,7 +60,7 @@ export default function CardsAbout (){
                        <Button onClick={ProfileFeedbackDownload} name="Big Five" Icon={<FaDownload/>}/>
                     </div>
                 </div>
-                <div className="flex justify-center border-[1px] h-[400px] w-[350px] border-double border-purple-600 hover:border-purple-900 rounded-xl ">
+                <div className="flex justify-center border-[1px] h-[400px] w-[350px] border-purple-600 hover:border-purple-900 rounded-xl ">
                     <div>
                         <h1 className=" pt-6 font-mono text-center text-purple-600 text-3xl">Hard-Skills</h1>
                         <span>

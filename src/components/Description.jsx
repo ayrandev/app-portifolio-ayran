@@ -2,10 +2,10 @@ import React from "react";
 import ImagePerfil from "./ImagePerfil";
 import { ReactTyped } from "react-typed";
 import Button from "./Button";
-import CardsAbout from "./CardsAbout";
+
 
 export default function Description() {
-    function scrollToSection(id) {
+    const scrollToSection = (id) => {
         const element = document.getElementById(id);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });

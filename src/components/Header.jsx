@@ -9,7 +9,7 @@ export default function Header(){
             <div className=" py-4 px-6 justify-self-center">
                 <nav className="flex items-center relative">
                     <ul className="flex gap-8 sm:gap-10 md:gap-20">
-                        <li className="font-mono text-xl hover:scale-110">
+                        <li className="font-mono text-xl hover:scale-110 border-transparent rounded h-8 w-[100px] text-center">
                             <NavLink to="/" className="text-purple-600 hover:text-purple-400"> Home </NavLink>
                         </li>
                         <li className="font-mono text-xl hover:scale-110">
