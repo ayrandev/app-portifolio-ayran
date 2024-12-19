@@ -4,6 +4,7 @@ import { ReactTyped } from "react-typed";
 import Button from "./Button";
 
 
+
 export default function Description() {
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
@@ -12,26 +13,31 @@ export default function Description() {
         }
       }
     return (
-        <div id="Description" className="min-h-screen w-screen bg-zinc-950 flex flex-col justify-center items-center overflow-x-hidden ">
-            <div className="flex flex-col items-center w-full ">
-                <ImagePerfil />
-            </div>
-            <div className="flex flex-col items-center text-center w-full max-w-[600px] pt-4">
-                <ReactTyped
-                    strings={[
-                        '<span class="font-mono text-purple-600 text-3xl">{Ayran Vieira}</span>',
-                        '<span class="font-mono text-purple-600 text-3xl"> Desenvolvedor Web Jr. </span>',
-                    ]}
-                    typeSpeed={40}
-                    backSpeed={50}
-                    loop
-                />
-                <p className="font-mono text-white text-lg leading-8 my-4">
-                    Seja bem-vindo ao meu perfil! Aqui você vai conhecer um pouco sobre minha trajetória na área de desenvolvimento web!
-                </p>
-                <Button onClick={() => scrollToSection('CardsAbout')} name="About-me" />
-            </div>
-        </div>
+        
+            <body id="Description" className="bg-[#000F0C] font-sans flex justify-evenly items-center w-screen">
+                <div className="flex items-cente">
+                    <ImagePerfil />
+                </div>
+                    <div>
+                        <div className="flex pt-4">
+                            <ReactTyped
+                                strings={[
+                                    '<span class="font-mono text-purple-600 text-start text-lg">Olá, eu me chamo:</span>',
+                                ]}
+                                typeSpeed={50}
+                                backSpeed={20}
+                                loop
+                            />
+                        </div>
+                        <div>
+                            <p className="font-[Roboto] text-white text-lg my-4">
+                                Seja bem-vindo ao meu perfil! 
+                            </p>
+                            <Button onClick={() => scrollToSection('CardsAbout')} name="About-me" />
+                        </div>
+                </div>
+            </body>
+        
     );
 }
 

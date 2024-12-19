@@ -5,26 +5,28 @@ import { NavLink } from "react-router-dom";
 
 export default function Header(){
     return(
-        <div className="fixed w-full bg-black">
-            <div className=" py-4 px-6 justify-self-center">
-                <nav className="flex items-center relative">
-                    <ul className="flex gap-8 sm:gap-10 md:gap-20">
-                        <li className="font-mono text-xl hover:scale-110 border-transparent rounded h-8 w-[100px] text-center">
-                            <NavLink to="/" className="text-purple-600 hover:text-purple-400"> Home </NavLink>
-                        </li>
-                        <li className="font-mono text-xl hover:scale-110">
-                            <NavLink to="/AboutPage" className="text-purple-600 hover:text-purple-400"> About-me </NavLink>
-                        </li>
-                        <li className="font-mono text-xl hover:scale-110">
-                            <NavLink to="/" className="text-purple-600 hover:text-purple-400"> Projects </NavLink>
-                        </li>
-                        <li className="font-mono text-xl hover:scale-110">
-                            <NavLink to="/" className="text-purple-600 hover:text-purple-400"> Contact-me </NavLink>
-                        </li>
-                    </ul>
-                </nav>
+        <header className="flex justify-center">
+            <div className="fixed bg-[#000F0C]/10 backdrop-blur-md border-b-[1px] border-[#00FFEA]">
+                <div className="pt-2 px-10">
+                    <nav className="">
+                        <ul className="flex gap-10">
+                            <li className="font-[Poppins] hover:scale-110 border-transparent">
+                                <NavLink to="/" className="text-white hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Home </NavLink>
+                            </li>
+                            <li className="font-[Poppins] hover:scale-110">
+                                <NavLink to="/AboutPage" className="text-white hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Sobre mim </NavLink>
+                            </li>
+                            <li className="font-[Poppins] hover:scale-110">
+                                <NavLink to="/" className="text-white hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Projetos </NavLink>
+                            </li>
+                            <li className="font-[Poppins]  hover:scale-110">
+                                <NavLink to="/" className="text-white hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Contatos </NavLink>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
+        </header>
     )
 }
 
