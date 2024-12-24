@@ -1,6 +1,7 @@
 import React from "react";
-import ImagePerfil from "./ImagePerfil";
 import { ReactTyped } from "react-typed";
+
+import ImagePerfil from "./ImagePerfil";
 import Button from "./Button";
 
 
@@ -14,24 +15,25 @@ export default function Description() {
       }
     return (
         
-            <body id="Description" className="bg-[#000F0C] font-sans flex justify-evenly items-center w-screen">
-                <div className="flex items-cente">
+            <body id="Description" className="bg-[#000F0C] flex justify-evenly font-sans w-screen ">
+                <div>
                     <ImagePerfil />
                 </div>
                     <div>
-                        <div className="flex pt-4">
+                        <div>
+                        <p className="font-[Poppins] pb-2 text-xl text-indigo-100 bg-clip-text">
+                                Olá, eu me chamo:
+                            </p>
                             <ReactTyped
                                 strings={[
-                                    '<span class="font-mono text-purple-600 text-start text-lg">Olá, eu me chamo:</span>',
+                                    '<span class="font-[Poppins] text-5xl bg-gradient-to-r from-blue-500 via-green-500 to-indigo-100 text-transparent bg-clip-text">Ayran Vieira<p class="font-[Poppins] text-2xl bg-gradient-to-r from-blue-500 via-green-500 to-indigo-100 text-transparent bg-clip-text">Desenvolvedor</p></span>',
                                 ]}
                                 typeSpeed={50}
-                                backSpeed={20}
-                                loop
                             />
                         </div>
-                        <div>
-                            <p className="font-[Roboto] text-white text-lg my-4">
-                                Seja bem-vindo ao meu perfil! 
+                        <div className="w-80">
+                            <p className="font-[Poppins] text-xl text-indigo-100">
+                                 <span>Entrego soluções digitais que impulsionam negócios e conectam pessoas.</span>
                             </p>
                             <Button onClick={() => scrollToSection('CardsAbout')} name="About-me" />
                         </div>
