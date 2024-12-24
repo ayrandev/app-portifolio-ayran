@@ -11,16 +11,16 @@ export default function Header(){
                     <nav className="">
                         <ul className="flex gap-10">
                             <li className="font-[Poppins] hover:scale-110 border-transparent">
-                                <NavLink to="/" className="text-white hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Home </NavLink>
+                                <NavLink to="/" className="text-indigo-100 hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Home </NavLink>
                             </li>
                             <li className="font-[Poppins] hover:scale-110">
-                                <NavLink to="/AboutPage" className="text-white hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Sobre mim </NavLink>
+                                <NavLink to="/AboutPage" className="text-indigo-100 hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Sobre mim </NavLink>
                             </li>
                             <li className="font-[Poppins] hover:scale-110">
-                                <NavLink to="/" className="text-white hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Projetos </NavLink>
+                                <NavLink to="/" className="text-indigo-100 hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Projetos </NavLink>
                             </li>
                             <li className="font-[Poppins]   hover:scale-110">
-                                <NavLink to="/" className="text-white hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Contatos </NavLink>
+                                <NavLink to="/" className="text-indigo-100 hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Contatos </NavLink>
                             </li>
                         </ul>
                     </nav>

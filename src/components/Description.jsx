@@ -20,22 +20,27 @@ export default function Description() {
                     <ImagePerfil />
                 </div>
                     <div>
-                        <div>
+                        <div className="w-80">
                         <p className="font-[Poppins] pb-2 text-xl text-indigo-100 bg-clip-text">
                                 Olá, eu me chamo:
                             </p>
                             <ReactTyped
                                 strings={[
-                                    '<span class="font-[Poppins] text-5xl bg-gradient-to-r from-blue-500 via-green-500 to-indigo-100 text-transparent bg-clip-text">Ayran Vieira<p class="font-[Poppins] text-2xl bg-gradient-to-r from-blue-500 via-green-500 to-indigo-100 text-transparent bg-clip-text">Desenvolvedor</p></span>',
+                                    `<span class="font-[Poppins] text-5xl bg-gradient-to-r from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text">
+                                    Ayran Vieira
+                                    <span class="font-[Poppins] text-3xl bg-gradient-to-r from-indigo-200 via-green-300 to-blue-500 text-transparent bg-clip-text"> desenvolvedor</span>
+                                    </span>`,
                                 ]}
-                                typeSpeed={50}
-                            />
+                                typeSpeed={30}
+                                cursorChar="<span class='typed-cursor text-3xl text-white'>|</span>"
+                                contentType="html"
+                                />
                         </div>
-                        <div className="w-80">
-                            <p className="font-[Poppins] text-xl text-indigo-100">
+                        <div className="w-80 pt-2">
+                            <p className="font-[Poppins] text-xl text-indigo-100 pb-4">
                                  <span>Entrego soluções digitais que impulsionam negócios e conectam pessoas.</span>
                             </p>
-                            <Button onClick={() => scrollToSection('CardsAbout')} name="About-me" />
+                            <Button onClick={() => scrollToSection('CardsAbout')} name="Sobre mim" />
                         </div>
                 </div>
             </body>
