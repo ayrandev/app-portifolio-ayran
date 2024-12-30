@@ -1,7 +1,7 @@
 import Description from "../components/Description";
 import Header from "../components/Header"
 import CardsAbout from "../components/CardsAbout";
-import CardsProject from "../components/CardsProject";
+import Cards from "../components/Cards";
 
 
 
@@ -11,8 +11,7 @@ function App (){
             <Header/>
             <Description />
             <CardsAbout/>
-            <CardsProject/>
-            
+            <Cards/>
         </>
     )
 }

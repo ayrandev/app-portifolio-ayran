@@ -28,7 +28,7 @@ export default function Description() {
                                 strings={[
                                     `<span class="font-[Poppins] text-5xl bg-gradient-to-r from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text">
                                     Ayran Vieira
-                                    <span class="font-[Poppins] text-3xl bg-gradient-to-r from-indigo-200 via-green-300 to-blue-500 text-transparent bg-clip-text"> desenvolvedor</span>
+                                    <span class="font-[Poppins] text-3xl bg-gradient-to-r from-indigo-200 via-green-300 to-blue-500 text-transparent bg-clip-text"> desenvolvedor web</span>
                                     </span>`,
                                 ]}
                                 typeSpeed={30}
