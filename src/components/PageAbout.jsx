@@ -35,7 +35,7 @@ export default function CardsAbout (){
             <div className="flex justify-center pt-16">
                 <div className="flex justify-center border-r-[1px] h-[600px] w-[600px] border-[#00FFEA]">
                 <div>
-                    <h1 className="font-[Poppins] font-bold text-3xl text-center bg-gradient-to-r from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text">Soft-Skills</h1>
+                    <h1 className="font-[Poppins] font-bold text-3xl text-center bg-gradient-to-r from-blue-800 via-green-400 to-indigo-100 text-transparent bg-clip-text">Soft-Skills</h1>
                         <div className="grid grid-cols-2 gap-8 p-8">
                             <Cards
                             title="Comunicação"
@@ -72,7 +72,7 @@ export default function CardsAbout (){
 
                 <div className="flex justify-center h-[600px] w-[600px] ">
                     <div>
-                        <h1 className="text-center font-[Poppins] font-bold text-3xl bg-gradient-to-r from-indigo-200 via-green-300 to-blue-500 text-transparent bg-clip-text">Hard-Skills</h1>
+                        <h1 className="text-center font-[Poppins] font-bold text-3xl bg-gradient-to-r from-indigo-100 via-green-400 to-blue-800 text-transparent bg-clip-text">Hard-Skills</h1>
                         <div className="grid grid-cols-2 gap-8 p-8">
                             <Cards
                             title="Comunicação"

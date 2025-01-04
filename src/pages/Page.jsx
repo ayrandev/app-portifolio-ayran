@@ -1,7 +1,7 @@
 import Description from "../components/Description";
 import Header from "../components/Header"
-import CardsAbout from "../components/CardsAbout";
-import Cards from "../components/Cards";
+import PageAbout from "../components/PageAbout";
+import PageProjects from "../components/PageProjects";
 
 
 
@@ -10,8 +10,8 @@ function App (){
         <>
             <Header/>
             <Description />
-            <CardsAbout/>
-            
+            <PageAbout/>
+            <PageProjects/>
         </>
     )
 }

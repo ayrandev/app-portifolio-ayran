@@ -22,16 +22,16 @@ export default function Description() {
                     <div>
                         <div className="w-80">
                         <p className="font-[Poppins] pb-2 text-xl text-indigo-100 bg-clip-text">
-                                Olá, eu me chamo:
+                                Olá, eu sou:
                             </p>
                             <ReactTyped
                                 strings={[
                                     `<span class="font-[Poppins] text-5xl bg-gradient-to-r from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text">
                                     Ayran Vieira </span>`,
                                     `<span class="font-[Poppins] text-4xl bg-gradient-to-r from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text">
-                                   Desenvolvedor </span>`
+                                    Desenvolvedor </span>`,
                                 ]}
-                                typeSpeed={30}
+                                typeSpeed={50}
                                 backSpeed={30}
                                 cursorChar="<span class='typed-cursor text-4xl text-white'>|</span>"
                                 loop
