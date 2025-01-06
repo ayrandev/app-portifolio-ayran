@@ -31,10 +31,11 @@ export default function Description() {
                                     `<span class="font-[Poppins] text-4xl bg-gradient-to-r from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text">
                                     Desenvolvedor </span>`,
                                 ]}
-                                typeSpeed={50}
+                                typeSpeed={40}
                                 backSpeed={30}
-                                cursorChar="<span class='typed-cursor text-4xl text-white'>|</span>"
                                 loop
+                                cursorChar="<span class='typed-cursor text-4xl text-white'>|</span>"
+                                
                                 />
                         </div>
                         <div className="w-80 pt-2">

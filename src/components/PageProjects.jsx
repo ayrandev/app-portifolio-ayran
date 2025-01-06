@@ -1,5 +1,8 @@
 import React from "react";
 import Cards from "./Cards";
+import  Button  from "./Button";
+
+import { FaGithub } from "react-icons/fa";
 
 export default function PageProjects () {
 
@@ -9,47 +12,41 @@ export default function PageProjects () {
                 <h1 className="font-[Poppins] font-bold text-3xl text-center bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 text-transparent bg-clip-text">Meus Projetos</h1>
             </div>
 
-            <div className="pt-4 grid grid-cols-2 gap-6">
-                <div className="flex gap-2">
+            <div className="pt-4 grid grid-cols-2 gap-8">
+                <div>
                     <Cards
+                        Icon={<FaGithub className="text-black text-6xl"/>}
                         className={`h-64 w-96 bg-gray-200 border`}
+                        Button={<Button className="rounded-full h-10" Icon={<FaGithub/>}/>}
                     />
                     <div className="flex flex-col justify-center gap-6">  
-                        <button className="rounded-full h-10"></button>
-                        <button className="rounded-full h-10"></button>
+                        
                     </div>
                 </div>
 
-                <div className="flex gap-2">
+                <div>
                     <Cards
+                        Icon={<FaGithub className="text-black text-6xl"/>}
                         className={`h-64 w-96 bg-gray-200 border`}
+                        Button={<Button className="rounded-full h-10" Icon={<FaGithub/>}/>}
                     />
-                    <div className="flex flex-col justify-center gap-6">  
-                        <button className="rounded-full h-10"></button>
-                        <button className="rounded-full h-10"></button>
-                    </div>
                 </div>
 
-                <div className="flex gap-2">
+                <div>
                     <Cards
+                        Icon={<FaGithub className="text-black text-6xl"/>}
                         className={`h-64 w-96 bg-gray-200 border`}
+                        Button={<Button className="rounded-full h-10" Icon={<FaGithub/>}/>}
                     />
-                    <div className="flex flex-col justify-center gap-6">  
-                        <button className="rounded-full h-10"></button>
-                        <button className="rounded-full h-10"></button>
-                    </div>
                 </div>
 
-                <div className="flex gap-2">
+                <div >
                     <Cards
+                        Icon={<FaGithub className="text-black text-6xl"/>}
                         className={`h-64 w-96 bg-gray-200 border`}
+                        Button={<Button className="rounded-full h-10" Icon={<FaGithub/>}/>}
                     />
-                    <div className="flex flex-col justify-center gap-6">  
-                        <button className="rounded-full h-10"></button>
-                        <button className="rounded-full h-10"></button>
-                    </div>
                 </div>
-                
             </div>
         </section>
     )
