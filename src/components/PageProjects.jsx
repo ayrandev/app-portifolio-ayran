@@ -17,18 +17,12 @@ export default function PageProjects () {
                     <Cards
                         Icon={<FaGithub className="text-black text-6xl"/>}
                         className={`h-64 w-96 bg-gray-200 border`}
-                        Button={<Button className="rounded-full h-10" Icon={<FaGithub/>}/>}
-                    />
-                    <div className="flex flex-col justify-center gap-6">  
-                        
-                    </div>
-                </div>
-
-                <div>
-                    <Cards
-                        Icon={<FaGithub className="text-black text-6xl"/>}
-                        className={`h-64 w-96 bg-gray-200 border`}
-                        Button={<Button className="rounded-full h-10" Icon={<FaGithub/>}/>}
+                            Buttons={
+                                <div className="grid grid-cols-2 content-end gap-10 mt-44">
+                                    <Button name="Deploy"  Icon={<FaGithub/>}/>
+                                    <Button name="Coding" Icon={<FaGithub/>}/>
+                                </div>
+                            }    
                     />
                 </div>
 
@@ -36,15 +30,38 @@ export default function PageProjects () {
                     <Cards
                         Icon={<FaGithub className="text-black text-6xl"/>}
                         className={`h-64 w-96 bg-gray-200 border`}
-                        Button={<Button className="rounded-full h-10" Icon={<FaGithub/>}/>}
+                            Buttons={
+                                <div className="grid grid-cols-2 content-end gap-10 mt-44">
+                                    <Button name="Deploy"  Icon={<FaGithub/>}/>
+                                    <Button name="Coding" Icon={<FaGithub/>}/>
+                                </div>
+                            }
                     />
                 </div>
 
-                <div >
+                <div>
                     <Cards
                         Icon={<FaGithub className="text-black text-6xl"/>}
                         className={`h-64 w-96 bg-gray-200 border`}
-                        Button={<Button className="rounded-full h-10" Icon={<FaGithub/>}/>}
+                            Buttons={
+                                <div className="grid grid-cols-2 content-end gap-10 mt-44">
+                                    <Button name="Deploy"  Icon={<FaGithub/>}/>
+                                    <Button name="Coding" Icon={<FaGithub/>}/>
+                                </div>
+                            }
+                    />
+                </div>
+
+                <div className="flex">
+                    <Cards
+                        Icon={<FaGithub className="text-black text-6xl"/>}
+                        className={`h-64 w-96 bg-gray-200 border`}
+                            Buttons={
+                                <div className="grid grid-cols-2 content-end gap-10 mt-44">
+                                    <Button name="Deploy"  Icon={<FaGithub/>}/>
+                                    <Button name="Coding" Icon={<FaGithub/>}/>
+                                </div>
+                            }
                     />
                 </div>
             </div>
