@@ -21,7 +21,7 @@ export default function CardsAbout (){
         }
     
      const CurriculoDownload = () => {
-        const fileUrl = "../public/cv.pdf"
+        const fileUrl = "../public/curriculo.pdf"
         const link = document.createElement("a");
         link.href = fileUrl;
         link.download = "Curriculo_AyranDev.pdf";
