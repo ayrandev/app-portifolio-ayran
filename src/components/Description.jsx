@@ -22,26 +22,24 @@ export default function Description() {
                     <div>
                         <div className="w-80">
                         <p className="font-[Poppins] pb-2 text-xl text-indigo-100 bg-clip-text">
-                                Olá, eu sou:
-                            </p>
-                            <ReactTyped
+                                Olá, eu sou: </p>
+                                <span className="font-[Poppins] text-5xl bg-gradient-to-r from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text">
+                                    Ayran Vieira </span>
+                                <p className="font-[Poppins] text-2xl bg-gradient-to-l from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text"> Desenvolvedor Web</p>
+                            
+                        </div>
+                        <div className="w-80 pt-4">
+                        <ReactTyped
                                 strings={[
-                                    `<span class="font-[Poppins] text-5xl bg-gradient-to-r from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text">
-                                    Ayran Vieira </span>`,
-                                    `<span class="font-[Poppins] text-4xl bg-gradient-to-r from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text">
-                                    Desenvolvedor </span>`,
+                                    `<span class="font-mono text-xl text-indigo-100 pb-">
+                                    Entrego soluções digitais que impulsionam negócios e conectam pessoas. </span>`,
                                 ]}
                                 typeSpeed={40}
-                                backSpeed={30}
+                                backSpeed={40}
                                 loop
-                                cursorChar="<span class='typed-cursor text-4xl text-white'>|</span>"
-                                
+                                cursorChar="<span class='text-white'>|</span>"
                                 />
-                        </div>
-                        <div className="w-80 pt-2">
-                            <p className="font-[Poppins] text-xl text-indigo-100 pb-4">
-                                 <span>Entrego soluções digitais que impulsionam negócios e conectam pessoas.</span>
-                            </p>
+                            
                             <Button onClick={() => scrollToSection('CardsAbout')} name="Sobre mim" />
                         </div>
                 </div>

@@ -7,7 +7,7 @@ import Animation from "../assets/Animation.png"
         <img
             src={Animation}
             alt="Minha animação"
-            style={{width: "800px", opacity: 0.2, }}
+            style={{width: "800px", opacity: 0.1, z: 10}}
         />
        </div>
     )

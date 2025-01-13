@@ -1,22 +1,15 @@
 import React from "react";
-import { IoLogoInstagram } from "react-icons/io";
-import { IoLogoWhatsapp } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
 import { FaRegCopyright } from "react-icons/fa6";
 
-export default function Footer () {
-    return(
-        <footer className="flex">
-            <div className="flex justify-center items-center w-full gap-20 h-14 border">
-                <IoLogoInstagram className="" />
-                <IoLogoWhatsapp />
-                <FaLinkedin/>
-                <FaGithub/>
-                <MdOutlineEmail />
-                <FaRegCopyright />
-            </div>
-        </footer>
+export default function Footer() {
+    return (
+      <footer className="flex justify-center items-center bg-zinc-950 py-4">
+        <div className="flex justify-center items-center text-center text-indigo-100 text-sm gap-2">
+          <FaRegCopyright className="text-indigo-100"/>
+          <span>Ayran Vieira</span>
+          <span>|</span>
+          <span className="text-indigo-200 hover:text-indigo-400">ayran.developer@gmail.com</span>
+        </div>
+      </footer>
     )
 }
