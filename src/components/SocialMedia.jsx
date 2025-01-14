@@ -22,27 +22,27 @@ export default function SocialMedia () {
 
     return(
         <div className="flex flex-col">
-            <div className="space-y-2">
+            <div className="space-y-3">
                 <div
-                    className="flex items-end space-x-2 text-xl cursor-pointer text-indigo-100 hover:text-[#A8E5E6] hover:scale-110 transition-colors"
+                    className="flex items-end space-x-2 cursor-pointer text-indigo-100 hover:text-[#A8E5E6] hover:scale-110 transition-colors"
                     onClick={InstaRedirect}>
                     <IoLogoInstagram size={24} />
                     <span>ayran.code</span>
                 </div>
                 <div
-                    className="flex items-end space-x-2 text-xl cursor-pointer text-indigo-100 hover:text-[#A8E5E6] hover:scale-110 transition-colors"
+                    className="flex items-end space-x-2  cursor-pointer text-indigo-100 hover:text-[#A8E5E6] hover:scale-110 transition-colors"
                     onClick={GitHubRedirect}>
                     <FaGithub size={24} />
                     <span>ayrandev</span>
                 </div>
                 <div
-                    className="flex items-end space-x-2 text-xl cursor-pointer text-indigo-100 hover:text-[#A8E5E6] hover:scale-110 transition-colors"
+                    className="flex items-end space-x-2  cursor-pointer text-indigo-100 hover:text-[#A8E5E6] hover:scale-110 transition-colors"
                     onClick={LinkedinRedirect}>
                     <FaLinkedin size={24} />
                     <span>ayran-vieira-dev</span>
                 </div>
                 <div
-                    className="flex items-end space-x-2 text-xl cursor-pointer text-indigo-100 hover:text-[#A8E5E6] hover:scale-110 transition-colors"
+                    className="flex items-end space-x-2  cursor-pointer text-indigo-100 hover:text-[#A8E5E6] hover:scale-110 transition-colors"
                     onClick={WhatsappRedirect}>
                     <IoLogoWhatsapp size={24} />
                     <span>Ayran Vieira</span>

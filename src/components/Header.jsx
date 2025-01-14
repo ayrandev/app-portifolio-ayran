@@ -5,8 +5,8 @@ import { NavLink } from "react-router-dom";
 
 export default function Header(){
     return(
-        <header className="flex justify-center">
-            <div className="fixed bg-[#000F0C]/10 backdrop-blur-md border-b-[1px] border-[#00FFEA]">
+        <header className="flex justify-center bg-[#000F0C]">
+            <div className=" bg-[#000F0C] border-b-[1px] border-[#00FFEA]">
                 <div className="pt-2 pb-[2px] px-10">
                     <nav className="">
                         <ul className="flex gap-10">
