@@ -20,25 +20,29 @@ export default function Description() {
                     <ImagePerfil />
                 </div>
                     <div>
-                        <div className="w-80">
+                        <div className="w-[350px]">
                         <p className="font-[Poppins] pb-2 text-xl text-indigo-100 bg-clip-text">
                                 Olá, eu sou: </p>
                                 <span className="font-[Poppins] text-5xl bg-gradient-to-r from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text">
                                     Ayran Vieira </span>
-                                <p className="font-[Poppins] text-2xl bg-gradient-to-l from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text"> Desenvolvedor Web</p>
-                            
-                        </div>
-                        <div className="w-80 pt-4">
-                        <ReactTyped
+                                <span className="font-[Poppins] text-2xl bg-gradient-to-l from-blue-500 via-green-300 to-indigo-200 text-transparent bg-clip-text"> Desenvolvedor </span>
+                                <ReactTyped
                                 strings={[
-                                    `<span class="font-mono text-xl text-indigo-100 pb-">
-                                    Entrego soluções digitais que impulsionam negócios e conectam pessoas. </span>`,
+                                    `<span class="font-mono text-3xl text-white ">
+                                    WEB </span>`,
+                                    `<span class="font-mono text-3xl text-white ">
+                                    Criative</span>`,
                                 ]}
                                 typeSpeed={40}
                                 backSpeed={40}
                                 loop
                                 cursorChar="<span class='text-white'>|</span>"
                                 />
+                            
+                        </div>
+                        <div className="w-80 pt-4">
+                                
+                        <p className="font-[Poppins] text-xl font-mono text-3xl text-indigo-100"> Entrego soluções digitais que impulsionam negócios e conectam pessoas.</p>
                             
                             <Button onClick={() => scrollToSection('CardsAbout')} name="Sobre mim" />
                         </div>

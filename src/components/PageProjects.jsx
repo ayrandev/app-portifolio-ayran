@@ -7,12 +7,14 @@ import { FaGithub } from "react-icons/fa";
 export default function PageProjects () {
 
     return(
-        <section id="MyProjects" className="justify-items-center bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 pt-16 h-screen w-screen">
-            <div className="h-34 w-full text-center">
-                <h1 className="font-[Poppins] text-3xl text-center bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 text-transparent bg-clip-text">Meus Projetos</h1>
+        <section id="MyProjects" className="justify-items-center bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 py-16 min-h-screen w-full">
+            <div className="mb-12 text-center">
+                <h1 className="text-4xl font-[Poppins] bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 text-transparent bg-clip-text">
+                Meus Projetos
+                </h1>
             </div>
 
-            <div className="pt-4 grid grid-cols-2 gap-8">
+            <div className="pt-4 grid grid-cols-2 gap-x-40 gap-y-12">
                 <div>
                     <Cards
                         Icon={<FaGithub className="text-black text-6xl"/>}

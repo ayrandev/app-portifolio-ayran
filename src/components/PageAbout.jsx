@@ -33,9 +33,9 @@ export default function CardsAbout (){
     return(
         <section id="CardsAbout" className="h-screen  bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950">
             <div className="flex justify-center pt-16">
-                <div className="flex justify-center border-r-[1px] h-[600px] w-[600px] border-[#00FFEA]">
+                <div className="flex justify-center h-[600px] w-[600px] ">
                 <div>
-                    <h1 className="font-[Poppins] font-bold text-3xl text-center bg-gradient-to-r from-blue-800 via-green-400 to-indigo-100 text-transparent bg-clip-text">Soft-Skills</h1>
+                    <h1 className=" text-center text-4xl font-[Poppins] bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 text-transparent bg-clip-text">Soft-Skills</h1>
                         <div className="grid grid-cols-2 gap-8 p-8">
                             <Cards
                             title="Comunicação"
@@ -72,7 +72,7 @@ export default function CardsAbout (){
 
                 <div className="flex justify-center h-[600px] w-[600px] ">
                     <div>
-                        <h1 className="text-center font-[Poppins] font-bold text-3xl bg-gradient-to-r from-indigo-100 via-green-400 to-blue-800 text-transparent bg-clip-text">Hard-Skills</h1>
+                        <h1 className=" text-center text-4xl font-[Poppins] bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 text-transparent bg-clip-text">Hard-Skills</h1>
                         <div className="grid grid-cols-2 gap-8 p-8">
                             <Cards
                             title="Comunicação"
