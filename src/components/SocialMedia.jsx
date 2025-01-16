@@ -3,8 +3,7 @@ import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
-import GifContact from "./GifContact";
+
 
 export default function SocialMedia () {
     const InstaRedirect = () => {

@@ -3,6 +3,7 @@ import { ReactTyped } from "react-typed";
 
 import ImagePerfil from "./ImagePerfil";
 import Button from "./Button";
+import GifBackGround from "./GifBackGround";
 
 
 
@@ -14,8 +15,8 @@ export default function Description() {
         }
       }
     return (
-        
-            <body id="Description" className=" bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 flex justify-evenly font-sans w-screen ">
+            <body id="Description" className="bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 flex justify-evenly font-sans w-screen relative">
+                <GifBackGround/>
                 <div>
                     <ImagePerfil />
                 </div>
@@ -29,7 +30,7 @@ export default function Description() {
                                 <ReactTyped
                                 strings={[
                                     `<span class="font-mono text-3xl text-white ">
-                                    WEB </span>`,
+                                    WEB</span>`,
                                     `<span class="font-mono text-3xl text-white ">
                                     Criative</span>`,
                                 ]}

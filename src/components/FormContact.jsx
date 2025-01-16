@@ -2,17 +2,23 @@ import React from "react";
 import Button from "./Button";
 import SocialMedia from "./SocialMedia";
 import Footer from "./Footer";
+import GifBackGround from "./GifBackGround";
 import GifContact from "./GifContact";
 
 export default function FormContact() {
   return (
-    <section id="MyContact" className="flex flex-col justify-between bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 min-h-screen">
+    <section
+      id="MyContact"
+      className="relative flex flex-col justify-between bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 min-h-screen"
+    >
+      {/* Background */}
+      <GifBackGround />
+
       {/* Container principal */}
       <div className="flex flex-col justify-center items-center w-full pt-32 pb-16">
         <div className="flex justify-center w-full max-w-4xl">
           {/* Div Container */}
           <div className="relative w-full flex gap-16 bg-black bg-opacity-20 backdrop-blur-md p-8 rounded-lg">
-            
             <div className="flex flex-col items-center w-1/2 gap-8">
               <h1 className="text-center pt-8 text-4xl font-[Poppins] bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 text-transparent bg-clip-text">
                 Contact-me
@@ -30,7 +36,10 @@ export default function FormContact() {
               <form className="p-8 flex flex-col items-center gap-4 bg-transparent">
                 {/* input name */}
                 <div className="w-full">
-                  <label htmlFor="name" className="text-indigo-200 font-[Poppins]">
+                  <label
+                    htmlFor="name"
+                    className="text-indigo-200 font-[Poppins]"
+                  >
                     Nome*
                   </label>
                   <input
@@ -45,7 +54,10 @@ export default function FormContact() {
 
                 {/* input email */}
                 <div className="w-full">
-                  <label htmlFor="email" className="text-indigo-200 font-[Poppins]">
+                  <label
+                    htmlFor="email"
+                    className="text-indigo-200 font-[Poppins]"
+                  >
                     Email*
                   </label>
                   <input
@@ -60,7 +72,10 @@ export default function FormContact() {
 
                 {/* input whatsapp */}
                 <div className="w-full">
-                  <label htmlFor="phone" className="text-indigo-200 font-[Poppins]">
+                  <label
+                    htmlFor="phone"
+                    className="text-indigo-200 font-[Poppins]"
+                  >
                     Whatsapp*
                   </label>
                   <input
@@ -75,7 +90,10 @@ export default function FormContact() {
 
                 {/* Campo: Mensagem */}
                 <div className="w-full">
-                  <label htmlFor="message" className="text-indigo-200 font-[Poppins]">
+                  <label
+                    htmlFor="message"
+                    className="text-indigo-200 font-[Poppins]"
+                  >
                     Qual motivo do seu contato?*
                   </label>
                   <textarea
