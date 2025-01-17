@@ -1,10 +1,18 @@
 import React from "react";
 import Button from "./Button";
 import Cards from "./Cards";
+import GifBackGround from "./GifBackGround";
+
 import { FaDownload } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import GifBackGround from "./GifBackGround";
+import { FaReact } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { GrMysql } from "react-icons/gr";
+import { FaGitAlt } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io";
+
 
 export default function CardsAbout() {
   const ProfileFeedbackDownload = () => {
@@ -71,16 +79,16 @@ export default function CardsAbout() {
           <div>
             <div className="mb-4 border-b-[1px] text-center">
                 <h1 className=" mb-2 text-center text-4xl font-[Poppins] bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 text-transparent bg-clip-text">
-                Soft-Skills
+                Hard-Skills
                 </h1>
             </div>
             <div className="grid grid-cols-2 gap-8 p-8">
-              <Cards title="Comunicação" description="This is the description of the card. It will slide in on hover." />
-              <Cards title="Comunicação" description="This is the description of the card. It will slide in on hover." />
-              <Cards title="Comunicação" description="This is the description of the card. It will slide in on hover." />
-              <Cards title="Comunicação" description="This is the description of the card. It will slide in on hover." />
-              <Cards title="Comunicação" description="This is the description of the card. It will slide in on hover." />
-              <Cards title="Comunicação" description="This is the description of the card. It will slide in on hover." />
+              <Cards Icon={<FaReact className="text-4xl ml-4 text-indigo-500"/>} title="React JS" description="This is the description of the card. It will slide in on hover." />
+              <Cards Icon={<IoLogoJavascript className="text-4xl ml-4 text-yellow-400"/>} title="Java Script" description="This is the description of the card. It will slide in on hover." />
+              <Cards Icon={<GrMysql className="text-4xl ml-4 text-indigo-800"/>} title="MySQL" description="This is the description of the card. It will slide in on hover." />
+              <Cards Icon={<FaGitAlt className="text-4xl ml-4 text-orange-500"/>} title="Git" description="This is the description of the card. It will slide in on hover." />
+              <Cards Icon={<FaPython className="text-4xl ml-4 text-yellow-500"/>} title="Python" description="This is the description of the card. It will slide in on hover." />
+              <Cards Icon={<IoLogoCss3 className="text-4xl ml-4 text-indigo-500"/>} title="CSS 3" description="This is the description of the card. It will slide in on hover." />
             </div>
           </div>
           <div className="self-end absolute pb-14 flex gap-6">
@@ -89,7 +97,7 @@ export default function CardsAbout() {
                 window.open("https://github.com/ayrandev", "_blank")
               }
               name="GitHub"
-              Icon={<FaGithub />}
+              Icon={<FaGithub/>}
             />
             <Button
               onClick={CurriculoDownload}
