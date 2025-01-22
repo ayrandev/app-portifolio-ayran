@@ -22,17 +22,18 @@ export default function Description() {
                 </div>
                     <div>
                         <div className="w-[350px]">
-                        <p className="font-[Poppins] pb-2 text-xl text-indigo-100 bg-clip-text">
+                        <p className="font-[Poppins] ml-2 text-indigo-100 bg-clip-text">
                                 Olá, eu sou: </p>
                                 <span className="font-[Poppins] text-5xl bg-gradient-to-r from-blue-500 via-cyan-200 to-green-500 text-transparent bg-clip-text">
                                     Ayran Vieira </span>
-                                <span className="font-[Poppins] text-2xl text-indigo-100"> Desenvolvedor </span>
+                                <span className="font-[Poppins] font-bold text-xl text-indigo-100"> Desenvolvedor </span>
                                 <ReactTyped
                                 strings={[
-                                    `<span class="font-mono text-3xl text-violet-500">WEB</span>`,
-                                    `<span class="font-mono text-3xl text-violet-500">Criativo</span>`,
-                                    `<span class="font-mono text-3xl text-violet-500">Dinâmico</span>`,
-                                    `<span class="font-mono text-3xl text-violet-500">Inovador</span>`,
+                                    `<span class="font-mono font-bold text-2xl text-violet-500">WEB</span>`,
+                                    `<span class="font-mono font-bold text-2xl text-violet-500">Full Stack</span>`,
+                                    `<span class="font-mono font-bold text-2xl text-violet-500">Criativo</span>`,
+                                    `<span class="font-mono font-bold text-2xl text-violet-500">Dinâmico</span>`,
+                                    `<span class="font-mono font-bold text-2xl text-violet-500">Inovador</span>`,
 
                                 ]}
                                 typeSpeed={40}

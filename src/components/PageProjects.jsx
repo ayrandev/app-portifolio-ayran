@@ -1,10 +1,37 @@
 import React from "react";
-import Cards from "./Cards";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
+import Gallery from "./Gallery";
 import Button from "./Button";
 import { FaGithub } from "react-icons/fa";
 import GifBackGround from "./GifBackGround";
 
 export default function PageProjects() {
+  const projects = [
+    {
+      id: 1,
+      title: "Projeto 1",
+      description: "Descrição do Projeto 1. Detalhes sobre as tecnologias usadas.",
+      icon: <FaGithub className="text-black text-6xl" />,
+      buttons: [
+        { name: "Deploy", icon: <FaGithub />, action: () => alert("Deploy do Projeto 1") },
+        { name: "Coding", icon: <FaGithub />, action: () => alert("Código do Projeto 1") },
+      ],
+    },
+    {
+      id: 2,
+      title: "Projeto 2",
+      description: "Descrição do Projeto 2. Outro projeto interessante.",
+      icon: <FaGithub className="text-black text-6xl" />,
+      buttons: [
+        { name: "Deploy", icon: <FaGithub />, action: () => alert("Deploy do Projeto 2") },
+        { name: "Coding", icon: <FaGithub />, action: () => alert("Código do Projeto 2") },
+      ],
+    },
+  ];
   return (
     <section
       id="MyProjects"
@@ -17,59 +44,37 @@ export default function PageProjects() {
         </h1>
       </div>
 
-      <div className="pt-4 grid grid-cols-2 gap-x-40 gap-y-12">
-        <div>
-          <Cards
-            Icon={<FaGithub className="text-black text-6xl" />}
-            className={`h-64 w-96 bg-gray-200 border`}
-            Buttons={
-              <div className="grid grid-cols-2 content-end gap-10 mt-44">
-                <Button name="Deploy" Icon={<FaGithub />} />
-                <Button name="Coding" Icon={<FaGithub />} />
-              </div>
-            }
-          />
-        </div>
-
-        <div>
-          <Cards
-            Icon={<FaGithub className="text-black text-6xl" />}
-            className={`h-64 w-96 bg-gray-200 border`}
-            Buttons={
-              <div className="grid grid-cols-2 content-end gap-10 mt-44">
-                <Button name="Deploy" Icon={<FaGithub />} />
-                <Button name="Coding" Icon={<FaGithub />} />
-              </div>
-            }
-          />
-        </div>
-
-        <div>
-          <Cards
-            Icon={<FaGithub className="text-black text-6xl" />}
-            className={`h-64 w-96 bg-gray-200 border`}
-            Buttons={
-              <div className="grid grid-cols-2 content-end gap-10 mt-44">
-                <Button name="Deploy" Icon={<FaGithub />} />
-                <Button name="Coding" Icon={<FaGithub />} />
-              </div>
-            }
-          />
-        </div>
-
-        <div className="flex">
-          <Cards
-            Icon={<FaGithub className="text-black text-6xl" />}
-            className={`h-64 w-96 bg-gray-200 border`}
-            Buttons={
-              <div className="grid grid-cols-2 content-end gap-10 mt-44">
-                <Button name="Deploy" Icon={<FaGithub />} />
-                <Button name="Coding" Icon={<FaGithub />} />
-              </div>
-            }
-          />
-        </div>
-      </div>
+      <Swiper
+        modules={[Navigation, Pagination]}
+        spaceBetween={30}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        className="max-w-4xl"
+      >
+        {projects.map((project) => (
+          <SwiperSlide key={project.id}>
+            <Gallery
+              Icon={project.icon}
+              title={project.title}
+              description={project.description}
+              Buttons={
+                <>
+                  {project.buttons.map((btn, idx) => (
+                    <Button
+                      key={idx}
+                      name={btn.name}
+                      Icon={btn.icon}
+                      onClick={btn.action}
+                    />
+                  ))}
+                </>
+              }
+              className="bg-white"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 }

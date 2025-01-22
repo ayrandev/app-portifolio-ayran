@@ -91,7 +91,7 @@ export default function CardsAbout() {
               <Cards Icon={<IoLogoCss3 className="text-4xl ml-4 text-indigo-500"/>} title="CSS 3" description="This is the description of the card. It will slide in on hover." />
             </div>
           </div>
-          <div className="self-end absolute pb-14 flex gap-6">
+          <div className="self-end absolute pb-16 flex gap-6">
             <Button
               onClick={() =>
                 window.open("https://github.com/ayrandev", "_blank")
