@@ -6,6 +6,7 @@ import GifBackGround from "./GifBackGround";
 import GifContact from "./GifContact";
 
 export default function FormContact() {
+
   return (
     <section
       id="MyContact"
@@ -34,6 +35,7 @@ export default function FormContact() {
 
             <div className="w-1/2 max-w-sm">
               <form action="https://formsubmit.co/ayran.developer@gmail.com" method= "POST" className="p-8 flex flex-col items-center gap-4 bg-transparent">
+              
                 {/* input name */}
                 <div className="w-full">
                   <label
@@ -88,7 +90,7 @@ export default function FormContact() {
                   />
                 </div>
 
-                {/* Campo: Mensagem */}
+                {/* input menssage */}
                 <div className="w-full">
                   <label
                     htmlFor="message"

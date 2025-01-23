@@ -18,7 +18,7 @@ export default function Header(){
                                 <Link onClick={(e) =>{
                                     e.preventDefault();
                                     window.scrollTo({
-                                        top: document.querySelector("#CardsAbout").offsetTop,
+                                        top: document.querySelector("#Description").offsetTop,
                                         behavior: "smooth",
                                     });}}
                                     className="text-indigo-100 hover:text-[#A8E5E6] relative inline-block text-lg before:absolute before:w-0 before:h-[1px] before:bg-[#00FFEA] before:duration-300 hover:before:w-full"> Home </Link>

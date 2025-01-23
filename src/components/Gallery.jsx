@@ -11,9 +11,9 @@ export default function Gallery({image, Icon, title, description, Buttons, class
             />
         </div>
 
-        <div className="flex items-center gap-4">
-            {Icon && <div className="text-4xl">{Icon}</div>}
-            {title && <h3 className="text-xl font-bold text-gray-800">{title}</h3>}
+        <div className="flex flex-col items-start gap-4">
+             <div className="text-2xl">{Icon}</div>
+            <h3 className="text-xl font-bold font-mono text-indigo-100">{title}</h3>
         </div>
 
       {description && <p className="text-sm text-gray-600 mt-2">{description}</p>}
