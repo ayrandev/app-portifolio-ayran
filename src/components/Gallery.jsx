@@ -5,9 +5,9 @@ export default function Gallery({image, Icon, title, description, Buttons, class
     <div className={`flex flex-col p-6 rounded-lg shadow-lg bg-zinc-800 ${className}`} style={{ width: "100%", height: "500px" }}>
         <div className="w-full md:w-1/3 h-full overflow-hidden rounded-lg">
             <img
-            src={image}
-            alt={title || "Projeto"}
-            className="object-cover w-full h-full"
+             src={image}
+             alt={title || "Projeto"}
+             className="object-cover w-full h-full"
             />
         </div>
 

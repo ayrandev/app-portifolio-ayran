@@ -13,6 +13,7 @@ export default function PageProjects() {
   const projects = [
     {
       id: 1,
+      image: "https://via.placeholder.com/300",
       title: "Projeto 1",
       description: "Descrição do Projeto 1. Detalhes sobre as tecnologias usadas.",
       icon: <FaGithub className="text-black text-6xl" />,
@@ -23,8 +24,20 @@ export default function PageProjects() {
     },
     {
       id: 2,
+      image: "https://via.placeholder.com/300",
       title: "Projeto 2",
       description: "Descrição do Projeto 2. Outro projeto interessante.",
+      icon: <FaGithub className="text-black text-6xl" />,
+      buttons: [
+        { name: "Deploy", icon: <FaGithub />, action: () => alert("Deploy do Projeto 2") },
+        { name: "Coding", icon: <FaGithub />, action: () => alert("Código do Projeto 2") },
+      ],
+    },
+    {
+      id: 3,
+      image: "https://via.placeholder.com/300",
+      title: "Projeto 3",
+      description: "Descrição do Projeto 3. Outro projeto interessante.",
       icon: <FaGithub className="text-black text-6xl" />,
       buttons: [
         { name: "Deploy", icon: <FaGithub />, action: () => alert("Deploy do Projeto 2") },
@@ -35,11 +48,11 @@ export default function PageProjects() {
   return (
     <section
       id="MyProjects"
-      className="relative justify-items-center bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 py-16 min-h-screen w-full"
+      className="relative justify-items-center bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 py-8 min-h-screen w-full"
     >
       <GifBackGround />
-      <div className="mb-8 border-b-[1px] w-[600px] text-center">
-        <h1 className="text-4xl font-[Poppins] bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 text-transparent bg-clip-text mb-2">
+      <div className="mb-8 border-b-[1px] border-[#00FFEA] w-[600px] text-center">
+        <h1 className="text-4xl font-[Poppins] text-indigo-100 mb-2">
           Meus Projetos
         </h1>
       </div>
@@ -55,6 +68,7 @@ export default function PageProjects() {
         {projects.map((project) => (
           <SwiperSlide key={project.id}>
             <Gallery
+              image={project.image}
               Icon={project.icon}
               title={project.title}
               description={project.description}

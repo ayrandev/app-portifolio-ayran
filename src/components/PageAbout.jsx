@@ -41,8 +41,8 @@ export default function CardsAbout() {
       <div className="flex justify-center pt-16">
         <div className="flex justify-center h-[600px] w-[600px]">
           <div>
-            <div className="mb-4 border-b-[1px]  text-center">
-                <h1 className=" mb-2 text-center text-4xl font-[Poppins] bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 text-transparent bg-clip-text">
+            <div className="mb-4 border-b-[1px] border-[#00FFEA]  text-center">
+                <h1 className=" mb-2 text-center text-4xl font-[Poppins] text-indigo-100">
                 Soft-Skills
                 </h1>
             </div>
@@ -77,18 +77,18 @@ export default function CardsAbout() {
 
         <div className="flex justify-center h-[600px] w-[600px]">
           <div>
-            <div className="mb-4 border-b-[1px] text-center">
-                <h1 className=" mb-2 text-center text-4xl font-[Poppins] bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 text-transparent bg-clip-text">
+            <div className="mb-4 border-b-[1px] border-[#00FFEA] text-center">
+                <h1 className=" mb-2 text-center text-4xl font-[Poppins] text-indigo-100">
                 Hard-Skills
                 </h1>
             </div>
             <div className="grid grid-cols-2 gap-8 p-8">
-              <Cards Icon={<FaReact className="text-4xl ml-4 text-indigo-500"/>} title="React JS" description="This is the description of the card. It will slide in on hover." />
-              <Cards Icon={<IoLogoJavascript className="text-4xl ml-4 text-yellow-400"/>} title="Java Script" description="This is the description of the card. It will slide in on hover." />
-              <Cards Icon={<GrMysql className="text-4xl ml-4 text-indigo-800"/>} title="MySQL" description="This is the description of the card. It will slide in on hover." />
-              <Cards Icon={<FaGitAlt className="text-4xl ml-4 text-orange-500"/>} title="Git" description="This is the description of the card. It will slide in on hover." />
-              <Cards Icon={<FaPython className="text-4xl ml-4 text-yellow-500"/>} title="Python" description="This is the description of the card. It will slide in on hover." />
-              <Cards Icon={<IoLogoCss3 className="text-4xl ml-4 text-indigo-500"/>} title="CSS 3" description="This is the description of the card. It will slide in on hover." />
+              <Cards Icon={<FaReact className="text-4xl ml-4 text-indigo-500"/>} title="React JS" description="O React é uma biblioteca JavaScript declarativa, eficiente e flexível para criar interfaces com o usuário." />
+              <Cards Icon={<IoLogoJavascript className="text-4xl ml-4 text-yellow-400"/>} title="Java Script" description="JavaScript é uma linguagem de programação que permite criar páginas da web interativas. " />
+              <Cards Icon={<GrMysql className="text-4xl ml-4 text-indigo-800"/>} title="MySQL" description="O MySQL é um sistema de gerenciamento de banco de dados relacional de código aberto" />
+              <Cards Icon={<FaGitAlt className="text-4xl ml-4 text-orange-500"/>} title="Git" description="O Git é um sistema de controle de versão distribuído que permite acompanhar alterações de código-fonte." />
+              <Cards Icon={<FaPython className="text-4xl ml-4 text-yellow-500"/>} title="Python" description="Python é uma linguagem de programação de alto nível, orientada a objetos e de código aberto. " />
+              <Cards Icon={<IoLogoCss3 className="text-4xl ml-4 text-indigo-500"/>} title="CSS 3" description="CSS3 é a última versão da linguagem Cascading Style Sheets (CSS), que define o estilo de páginas web" />
             </div>
           </div>
           <div className="self-end absolute pb-16 flex gap-6">

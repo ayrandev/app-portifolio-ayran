@@ -15,7 +15,7 @@ export default function FormContact() {
       <GifBackGround />
 
       {/* Container principal */}
-      <div className="flex flex-col justify-center items-center w-full pt-32 pb-16">
+      <div className="flex flex-col justify-center items-center w-full pt-8 pb-16">
         <div className="flex justify-center w-full max-w-4xl">
           {/* Div Container */}
           <div className="relative w-full flex gap-16 bg-black bg-opacity-20 backdrop-blur-md p-8 rounded-lg">
@@ -33,7 +33,7 @@ export default function FormContact() {
             <div className="border-l-[1px] border-[#00FFEA] opacity-50 h-full"></div>
 
             <div className="w-1/2 max-w-sm">
-              <form className="p-8 flex flex-col items-center gap-4 bg-transparent">
+              <form action="https://formsubmit.co/ayran.developer@gmail.com" method= "POST" className="p-8 flex flex-col items-center gap-4 bg-transparent">
                 {/* input name */}
                 <div className="w-full">
                   <label
@@ -106,7 +106,7 @@ export default function FormContact() {
                 </div>
 
                 <div className="w-full flex justify-end mt-4">
-                  <Button name="Enviar" />
+                  <Button type="submit" name="Enviar" />
                 </div>
               </form>
             </div>
