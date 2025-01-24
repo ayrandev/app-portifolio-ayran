@@ -4,6 +4,7 @@ import SocialMedia from "./SocialMedia";
 import Footer from "./Footer";
 import GifBackGround from "./GifBackGround";
 import GifContact from "./GifContact";
+import axios from "axios";
 
 export default function FormContact() {
 
@@ -30,13 +31,31 @@ export default function FormContact() {
             <div className="border-l-[1px] border-[#00FFEA] opacity-50 h-full"></div>
 
             <div className="w-1/2 max-w-sm">
-              <form  onSubmit={(e) => {
-                  e.preventDefault();
-                  }} 
-                  action="https://formsubmit.co/ayran.developer@gmail.com" 
-                  method= "POST" 
-                  className="p-8 flex flex-col items-center gap-4 bg-transparent" >
-              
+              <form  onSubmit={async (e) => {
+                      e.preventDefault();
+                      const formData = new FormData(e.target);
+                      const data = Object.fromEntries(formData);
+
+                      try {
+                        const response = await axios.post("http://localhost:3000/form", data, {
+                          headers: {
+                            "Content-Type": "application/json",
+                          },
+                        });
+
+                        if (response.status === 200) {
+                          alert("Formulário enviado com sucesso!");
+                        } else {
+                          alert("Erro ao enviar o formulário!");
+                        }
+                      } catch (error) {
+                        console.error("Erro na requisição:", error);
+                        alert("Erro de conexão!");
+                      }
+                    }}
+                    method="POST"
+                    className="p-8 flex flex-col items-center gap-4 bg-transparent"
+                  >
                 <div className="w-full">
                   <label className="text-indigo-200 font-[Poppins]">Nome completo*</label>
                   <input
