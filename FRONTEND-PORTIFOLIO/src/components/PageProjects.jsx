@@ -11,9 +11,9 @@ import projects from "./Projects";
 
 export default function PageProjects() {
   return (
-    <section id="MyProjects" className="relative justify-items-center bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 py-8 min-h-screen w-full">
+    <section id="Projects" className="relative justify-items-center bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 py-6 min-h-screen w-full">
       <GifBackGround />
-      <div className="mb-8 border-b-[1px] border-[#00FFEA] w-[600px] text-center">
+      <div className="mb-6 border-b-[1px] border-[#00FFEA] w-[600px] text-center">
         <h1 className="text-4xl font-[Poppins] text-indigo-100 mb-2">
           Meus Projetos
         </h1>

@@ -9,7 +9,7 @@ import GifBackGround from "./GifBackGround";
 
 export default function Description() {
     return (
-            <body id="Description" className="bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 flex justify-evenly font-sans w-screen relative">
+            <body id="Home" className="bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 flex justify-evenly font-sans w-screen relative">
                 <GifBackGround/>
                 <div>
                     <ImagePerfil />

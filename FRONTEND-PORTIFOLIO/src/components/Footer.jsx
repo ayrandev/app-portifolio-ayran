@@ -3,7 +3,7 @@ import { FaRegCopyright } from "react-icons/fa6";
 
 export default function Footer() {
     return (
-      <footer className="flex justify-center items-center bg-black py-4">
+      <footer className="flex justify-center items-center bg-black py-2">
         <div className="flex justify-center items-center text-center text-indigo-100 text-sm gap-2">
           <FaRegCopyright className="text-indigo-100"/>
           <span>Ayran Vieira</span>

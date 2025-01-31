@@ -36,9 +36,9 @@ export default function CardsAbout() {
   };
 
   return (
-    <section id="CardsAbout" className="relative h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950">
+    <section id="About-me" className="relative h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950">
       <GifBackGround />
-      <div className="flex justify-center pt-16">
+      <div className="flex justify-center pt-10">
         <div className="flex justify-center h-[600px] w-[600px]">
           <div>
             <div className="mb-4 border-b-[1px] border-[#00FFEA]  text-center">
