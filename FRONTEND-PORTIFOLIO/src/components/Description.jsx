@@ -2,7 +2,6 @@ import React from "react";
 import { ReactTyped } from "react-typed";
 
 import ImagePerfil from "./ImagePerfil";
-import Button from "./Button";
 import GifBackGround from "./GifBackGround";
 
 
