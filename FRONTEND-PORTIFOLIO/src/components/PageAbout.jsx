@@ -23,7 +23,7 @@ export default function CardsAbout() {
       
       <div className="flex flex-col lg:flex-row items-center justify-center gap-12">
         {/* Soft-Skills */}
-        <div className="text-center w-full max-w-lg">
+        <div className="text-center w-full h-96 max-w-lg">
           <h1 className="mb-4 text-3xl md:text-4xl font-[Poppins] text-indigo-100 border-b border-[#00FFEA] pb-2">
             Soft-Skills
           </h1>
@@ -46,7 +46,7 @@ export default function CardsAbout() {
         </div>
 
         {/* Hard-Skills */}
-        <div className="text-center w-full max-w-lg">
+        <div className="text-center w-full h-96 max-w-lg">
           <h1 className="mb-4 text-3xl md:text-4xl font-[Poppins] text-indigo-100 border-b border-[#00FFEA] pb-2">
             Hard-Skills
           </h1>
