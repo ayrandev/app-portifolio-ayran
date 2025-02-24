@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     image: "../assets/Portifolio.png",
     title: "Portifólio Pessoal",
-    description: "Esse projeto foi desenvolvido com o ituito de colocar em pratica todos os fundamentos que tenho conhecimento. A base dele é React.js e foi utilizado biblioteca axios para enviar requiseções através do formulário para o back-end.",
+    description: "Esse projeto foi desenvolvido com o ituito de colocar em pratica alguns dos fundamentos que tenho conhecimento. A base dele é React.js, para estilização usei a biblioteca tailwind e foi utilizado biblioteca axios para enviar requiseções através do formulário para o back-end.",
     buttons: [
       { name: "Coding", icon: <FaGithub />, action: () => window.open("https://github.com/ayrandev/MY-PORTIFOLY", "_blank") },
     ],

@@ -13,7 +13,7 @@ export default function PageProjects() {
   return (
     <section id="Projects" className="justify-items-center bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 py-6">
       <GifBackGround />
-      <div className="mb-6 border-b-[1px] border-[#00FFEA] w-[600px] text-center">
+      <div className="mb-6 border-b-[1px] border-[#00FFEA] w-[600px] text-center pt-4">
         <h1 className="text-4xl font-[Poppins] text-indigo-100 mb-2">
           Meus Projetos
         </h1>
