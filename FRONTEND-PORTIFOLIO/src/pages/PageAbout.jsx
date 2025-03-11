@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./Button";
-import Cards from "./Cards";
-import GifBackGround from "./GifBackGround";
+import Button from "../components/Button";
+import Cards from "../components/Cards";
+import GifBackGround from "../components/GifBackGround";
 import { FaDownload, FaLinkedin, FaGithub, FaReact, FaGitAlt, FaPython } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoCss3 } from "react-icons/io5";
 import { GrMysql } from "react-icons/gr";

@@ -7,13 +7,13 @@ export default function Description() {
   return (
     <section
       id="Home"
-      className="bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 flex flex-col items-center justify-center text-center font-sans w-screen min-h-screen px-4 py-16 sm:py-10"
+      className="relative flex justify-center min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 px-4 py-24"
     >
       <GifBackGround />
-      <div className="items-center flex gap-36">
+      <div className="items-center sm:flex gap-36">
         <ImagePerfil />
-          <div className="flex flex-col items-center">
-            <div className="max-w-[90%] sm:max-w-[350px]">
+          <div className="flex flex-col sm:flex items-center w-[50vh]">
+            <div className="max-w-[90%] sm:max-w-[350px] mt-20">
               <p className="font-[Poppins] text-sm sm:text-base text-indigo-100">Olá, eu sou:</p>
               <h1 className="font-[Poppins] text-4xl sm:text-5xl bg-gradient-to-r from-blue-500 via-[#00FFEA] to-green-500 text-transparent bg-clip-text">
                 Ayran Vieira

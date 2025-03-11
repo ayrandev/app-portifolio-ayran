@@ -1,15 +1,15 @@
 import React from "react";
-import Button from "./Button";
-import SocialMedia from "./SocialMedia";
-import Footer from "./Footer";
-import GifBackGround from "./GifBackGround";
-import GifContact from "./GifContact";
+import Button from "../components/Button";
+import SocialMedia from "../components/SocialMedia";
+import Footer from "../components/Footer";
+import GifBackGround from "../components/GifBackGround";
+import GifContact from "../components/GifContact";
 import axios from "axios";
 
 export default function FormContact() {
 
   return (
-    <section id="Contact" className="relative flex flex-col justify-between bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 min-h-screen">
+    <section id="Contact" className="relative min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 px-4 py-10">
       <GifBackGround />
 
       {/* Container principal */}

@@ -6,7 +6,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="border-[#00FFEA]  fixed w-full justify-center flex bg-transparent z-50">
+    <header className="border-[#00FFEA] fixed w-screen justify-center flex bg-transparent z-50">
       <div className="flex justify-between items-center py-2 px-4 sm:px-10">
         <button className="sm:hidden text-[#00FFEA]" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X size={28} /> : <Menu size={28} />}

@@ -4,14 +4,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination } from "swiper/modules";
-import Gallery from "./Gallery";
-import Button from "./Button";
-import GifBackGround from "./GifBackGround";
-import projects from "./Projects";
+import Gallery from "../components/Gallery";
+import Button from "../components/Button";
+import GifBackGround from "../components/GifBackGround";
+import projects from "../components/Projects";
 
 export default function PageProjects() {
   return (
-    <section id="Projects" className="justify-items-center bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 py-6">
+    <section id="Projects" className="relative justify-items-center min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 px-4 py-10">
       <GifBackGround />
       <div className="mb-6 border-b-[1px] border-[#00FFEA] w-[600px] text-center pt-4">
         <h1 className="text-4xl font-[Poppins] text-indigo-100 mb-2">
