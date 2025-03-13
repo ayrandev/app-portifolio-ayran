@@ -1,4 +1,4 @@
-import Description from "../components/Description";
+import Description from "./Description";
 import Header from "../components/Header"
 import PageAbout from "./PageAbout";
 import FormContact from "./FormContact";

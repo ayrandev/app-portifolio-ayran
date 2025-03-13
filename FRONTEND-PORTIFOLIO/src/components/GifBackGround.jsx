@@ -3,7 +3,7 @@ import Codebg from "../assets/codebg.png";
 
 const GifBackGround = () => {
   return (
-    <div className="absolute top-0 left-0 w-full h-full ">
+    <div className="absolute top-0 left-0 w-full h-[100%] ">
       <img
         className="w-full h-full object-cover opacity-15 pointer-events-none"
         src={Codebg}

@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
-import ImagePerfil from "./ImagePerfil";
-import GifBackGround from "./GifBackGround";
+import ImagePerfil from "../components/ImagePerfil";
+import GifBackGround from "../components/GifBackGround";
 
 export default function Description() {
   return (
@@ -13,7 +13,7 @@ export default function Description() {
       <div className="items-center sm:flex gap-36">
         <ImagePerfil />
           <div className="flex flex-col sm:flex items-center w-[50vh]">
-            <div className="max-w-[90%] sm:max-w-[350px] mt-20">
+            <div className="max-w-[90%] sm:max-w-[55vh] sm:mt-20">
               <p className="font-[Poppins] text-sm sm:text-base text-indigo-100">Olá, eu sou:</p>
               <h1 className="font-[Poppins] text-4xl sm:text-5xl bg-gradient-to-r from-blue-500 via-[#00FFEA] to-green-500 text-transparent bg-clip-text">
                 Ayran Vieira
@@ -33,7 +33,7 @@ export default function Description() {
                 cursorChar="<span class='text-white'>|</span>"
               />
             </div>
-          <div className="max-w-[90%] sm:w-80 pt-4">
+          <div className="max-w-[30vh] sm:w-80 pt-4">
             <p className="font-[Poppins] text-lg sm:text-3xl font-mono text-white">
               Transformando ideias em experiências digitais impactantes.
             </p>
