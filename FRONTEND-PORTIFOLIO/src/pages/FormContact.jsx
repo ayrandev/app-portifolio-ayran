@@ -3,59 +3,49 @@ import Button from "../components/Button";
 import SocialMedia from "../components/SocialMedia";
 import Footer from "../components/Footer";
 import GifBackGround from "../components/GifBackGround";
-import GifContact from "../components/GifContact";
 import axios from "axios";
 
 export default function FormContact() {
-
   return (
-    <section id="Contact" className="relative flex flex-col min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 px-4 sm:py-10">
+    <section id="Contact" className="relative flex flex-col min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 px-4 sm:py-6">
       <GifBackGround />
 
       {/* Container principal */}
-      <div className="flex flex-col justify-center items-center w-full pt-8 pb-16">
-        <div className="flex justify-center w-full max-w-4xl">
-          {/* Div Container */}
-          <div className="relative w-full flex gap-16 bg-black bg-opacity-20 backdrop-blur-md p-8 rounded-lg">
-            <div className="flex flex-col items-center w-1/2 gap-8">
-              <h1 className="text-center pt-8 text-4xl font-[Poppins] bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 text-transparent bg-clip-text">
-                Contact-me
+      <div className="flex flex-col justify-center items-center w-full pt-6 pb-12">
+        <div className="flex justify-center w-full max-w-6xl px-4">
+          {/* Container de Layout Flex */}
+          <div className="relative w-[100%] justify-center flex flex-col-reverse sm:flex-row-reverse gap-8 lg:gap-8 p-2 rounded-lg shadow-lg ">
+            {/* Formulário de Contato */}
+            <div className="w-full lg:w-2/3 flex flex-col gap-8 order-1 sm:order-none">
+              <h1 className="text-3xl text-center text-transparent bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 font-[Poppins] bg-clip-text">
+                Entre em Contato
               </h1>
-              <div className="flex flex-col justify-center items-center w-full">
-                <SocialMedia />
-                <GifContact />
-              </div>
-            </div>
+              <form 
+                onSubmit={async (e) => {
+                  e.preventDefault();
+                  const formData = new FormData(e.target);
+                  const data = Object.fromEntries(formData);
 
-            {/* Linha divisória */}
-            <div className="border-l-[1px] border-[#00FFEA] opacity-50 h-full"></div>
+                  try {
+                    const response = await axios.post("http://localhost:3000/form", data, {
+                      headers: {
+                        "Content-Type": "application/json",
+                      },
+                    });
 
-            <div className="w-1/2 max-w-sm">
-              <form  onSubmit={async (e) => {
-                      e.preventDefault();
-                      const formData = new FormData(e.target);
-                      const data = Object.fromEntries(formData);
-
-                      try {
-                        const response = await axios.post("http://localhost:3000/form", data, {
-                          headers: {
-                            "Content-Type": "application/json",
-                          },
-                        });
-
-                        if (response.status === 200) {
-                          alert("Formulário enviado com sucesso!");
-                        } else {
-                          alert("Erro ao enviar o formulário!");
-                        }
-                      } catch (error) {
-                        console.error("Erro na requisição:", error);
-                        alert("Erro de conexão!");
-                      }
-                    }}
-                    method="POST"
-                    className="p-8 flex flex-col items-center gap-4 bg-transparent"
-                  >
+                    if (response.status === 200) {
+                      alert("Formulário enviado com sucesso!");
+                    } else {
+                      alert("Erro ao enviar o formulário!");
+                    }
+                  } catch (error) {
+                    console.error("Erro na requisição:", error);
+                    alert("Erro de conexão!");
+                  }
+                }} 
+                method="POST" 
+                className="p-6 bg-black bg-opacity-50 rounded-lg shadow-lg space-y-6"
+              >
                 <div className="w-full">
                   <label className="text-indigo-200 font-[Poppins]">Nome completo*</label>
                   <input
@@ -64,7 +54,7 @@ export default function FormContact() {
                     name="name"
                     placeholder="Digite seu nome"
                     required
-                    className="h-10 w-full bg-transparent border-b-[1px] border-[#00FFEA] text-white px-2"
+                    className="h-12 w-full bg-transparent border-b-[2px] border-[#00FFEA] text-white px-4 focus:outline-none focus:ring-2 focus:ring-[#00FFEA] transition-all duration-300"
                   />
                 </div>
 
@@ -76,7 +66,7 @@ export default function FormContact() {
                     name="email"
                     placeholder="Digite seu email"
                     required
-                    className="h-10 w-full bg-transparent border-b-[1px] border-[#00FFEA] text-white px-2"
+                    className="h-12 w-full bg-transparent border-b-[2px] border-[#00FFEA] text-white px-4 focus:outline-none focus:ring-2 focus:ring-[#00FFEA] transition-all duration-300"
                   />
                 </div>
 
@@ -88,26 +78,30 @@ export default function FormContact() {
                     name="phone"
                     placeholder="Digite seu whatsapp"
                     required
-                    className="h-10 w-full bg-transparent border-b-[1px] border-[#00FFEA] text-white px-2"
+                    className="h-12 w-full bg-transparent border-b-[2px] border-[#00FFEA] text-white px-4 focus:outline-none focus:ring-2 focus:ring-[#00FFEA] transition-all duration-300"
                   />
                 </div>
 
                 <div className="w-full">
-                  <label className="text-indigo-200 font-[Poppins]"> Qual motivo do seu contato?* </label>
+                  <label className="text-indigo-200 font-[Poppins]">Qual motivo do seu contato?*</label>
                   <textarea
                     id="message"
                     name="message"
                     placeholder="Digite sua mensagem"
                     required
-                    className="h-24 w-full bg-transparent border-b-[1px] border-[#00FFEA] text-white px-2"
+                    className="h-32 w-full bg-transparent border-b-[2px] border-[#00FFEA] text-white px-4 focus:outline-none focus:ring-2 focus:ring-[#00FFEA] transition-all duration-300"
                   ></textarea>
                 </div>
 
-                <div className="w-full flex justify-end mt-4">
+                <div className="w-full flex justify-end mt-6">
                   <Button type="submit" name="Enviar" />
-                  
                 </div>
               </form>
+            </div>
+            
+            {/* Card redes sociais*/}
+            <div className="flex items-center sm:mt-8 order-none sm:order-1">
+                <SocialMedia/>
             </div>
           </div>
         </div>
