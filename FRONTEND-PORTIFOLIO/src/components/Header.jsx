@@ -6,11 +6,21 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="border-[#00FFEA] fixed w-screen justify-center flex bg-transparent z-50">
-      <div className="flex justify-between items-center py-2 px-4 sm:px-10">
-        <button className="sm:hidden text-[#00FFEA]" onClick={() => setMenuOpen(!menuOpen)}>
+    <header className="border-[#00FFEA] fixed w-screen justify-center items-center flex bg-transparent z-50">
+      <div className="flex justify-between sm:justify-center items-center py-2 px-4 sm:px-10 w-full">
+        {/* Botão do menu hambúrguer alinhado à esquerda */}
+        <button
+          className="sm:hidden text-[#00FFEA]"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
           {menuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
+
+        {/* Logo ou outro conteúdo pode ir aqui */}
+        <div className="hidden sm:block">
+          {/* Adicione seu logo ou outro conteúdo à direita aqui, se necessário */}
+        </div>
+
         <nav>
           <ul
             className={`${

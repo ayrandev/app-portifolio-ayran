@@ -7,7 +7,7 @@ export default function Description() {
   return (
     <section
       id="Home"
-      className="relative flex justify-center items-center min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 px-6 sm:px-12 py-24"
+      className="relative fle justify-center items-center min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 pt-28 sm:pt-32"
     >
       <GifBackGround />
       <div className="flex flex-col-reverse sm:flex-row-reverse items-center gap-16 max-w-6xl w-full">

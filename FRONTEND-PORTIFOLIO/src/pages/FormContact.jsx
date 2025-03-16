@@ -7,20 +7,20 @@ import axios from "axios";
 
 export default function FormContact() {
   return (
-    <section id="Contact" className="relative flex flex-col min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 px-4 sm:py-6">
+    <section id="Contact" className="relative flex flex-col min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950">
       <GifBackGround />
 
       {/* Container principal */}
-      <div className="flex flex-col justify-center items-center w-full pt-6 pb-12">
+      <div className="flex flex-col justify-center items-center w-full pt-6 pb-12 flex-grow">
         <div className="flex justify-center w-full max-w-6xl px-4">
           {/* Container de Layout Flex */}
-          <div className="relative w-[100%] justify-center flex flex-col-reverse sm:flex-row-reverse gap-8 lg:gap-8 p-2 rounded-lg shadow-lg ">
+          <div className="relative w-full flex flex-col-reverse sm:items-center gap-8 lg:gap-8 p-2 rounded-lg shadow-lg">
             {/* Formulário de Contato */}
-            <div className="w-full lg:w-2/3 flex flex-col gap-8 order-1 sm:order-none">
+            <div className="w-full lg:w-2/3 flex flex-col gap-2 order-1 sm:order-none">
               <h1 className="text-3xl text-center text-transparent bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 font-[Poppins] bg-clip-text">
                 Entre em Contato
               </h1>
-              <form 
+              <form
                 onSubmit={async (e) => {
                   e.preventDefault();
                   const formData = new FormData(e.target);
@@ -42,8 +42,8 @@ export default function FormContact() {
                     console.error("Erro na requisição:", error);
                     alert("Erro de conexão!");
                   }
-                }} 
-                method="POST" 
+                }}
+                method="POST"
                 className="p-6 bg-black bg-opacity-50 rounded-lg shadow-lg space-y-6"
               >
                 <div className="w-full">
@@ -97,11 +97,16 @@ export default function FormContact() {
                   <Button type="submit" name="Enviar" />
                 </div>
               </form>
+
+              {/* Redes sociais abaixo do formulário para telas maiores */}
+              <div className="hidden lg:flex justify-center mt-6 space-x-4">
+                <SocialMedia />
+              </div>
             </div>
-            
-            {/* Card redes sociais*/}
-            <div className="flex items-center sm:mt-8 order-none sm:order-1">
-                <SocialMedia/>
+
+            {/* Redes sociais para telas menores */}
+            <div className="flex items-center justify-center sm:mt-8 order-none sm:order-1 lg:hidden">
+              <SocialMedia />
             </div>
           </div>
         </div>

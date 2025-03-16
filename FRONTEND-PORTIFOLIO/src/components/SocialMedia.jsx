@@ -19,7 +19,7 @@ export default function SocialMedia () {
     };
 
     return (
-        <div className="grid grid-cols-2 gap-4 sm:flex sm:flex-col items-center sm:space-y-4">
+        <div className="grid grid-cols-2 gap-8 sm:flex sm:flex sm:w-[100%] items-center">
             {/* Card Instagram */}
             <div
                 className="flex flex-col w-[100%] items-center justify-center p-4 bg-black bg-opacity-50 rounded-lg shadow-lg hover:scale-105 cursor-pointer transition-all duration-300 ease-in-out"

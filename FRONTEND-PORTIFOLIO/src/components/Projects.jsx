@@ -1,19 +1,21 @@
 import { FaGithub } from "react-icons/fa";
-import { MdLaptopChromebook } from "react-icons/md"
+import { MdLaptopChromebook } from "react-icons/md";
+import Portifolio from "../assets/portifolio.jpeg";
+import JogoDoNumeroSecreto from "../assets/jogo-do-numero-secreto.jpeg";
 
 const projects = [
   {
     id: 1,
-    image: "../assets/Portifolio.png",
+    image: Portifolio,
     title: "Portifólio Pessoal",
-    description: "Esse projeto foi desenvolvido com o ituito de colocar em pratica alguns dos fundamentos que tenho conhecimento. A base dele é React.js, para estilização usei a biblioteca tailwind e foi utilizado biblioteca axios para enviar requiseções através do formulário para o back-end.",
+    description: "Esse projeto foi desenvolvido com o intuito de colocar em prática alguns dos fundamentos que tenho conhecimento. A base dele é React.js, para estilização usei a biblioteca tailwind e foi utilizado a biblioteca axios para enviar requisições através do formulário para o back-end.",
     buttons: [
-      { name: "Coding", icon: <FaGithub />, action: () => window.open("https://github.com/ayrandev/MY-PORTIFOLY", "_blank") },
+      { name: "Coding", icon: <FaGithub />, action: () => window.open("https://github.com/ayrandev/app-portifolio-ayran", "_blank") },
     ],
   },
   {
     id: 2,
-    image: "../assets/Portifolio.png",
+    image: JogoDoNumeroSecreto,
     title: "Projeto 2",
     description: "Descrição do Projeto 2. Outro projeto interessante.",
     icon: <FaGithub className="text-black text-3xl" />,
@@ -24,7 +26,7 @@ const projects = [
   },
   {
     id: 3,
-    image: "../assets/Portifolio.png",
+    image: "", // Se não tiver imagem, pode deixar como uma string vazia
     title: "Projeto 3",
     description: "Descrição do Projeto 3. Outro projeto interessante.",
     icon: <FaGithub className="text-black text-3xl" />,
