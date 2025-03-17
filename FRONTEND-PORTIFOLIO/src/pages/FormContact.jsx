@@ -98,7 +98,7 @@ export default function FormContact() {
                 </div>
               </form>
 
-              {/* Redes sociais abaixo do formulário para telas maiores */}
+              {/* Redes sociais para telas maiores */}
               <div className="hidden lg:flex justify-center mt-6 space-x-4">
                 <SocialMedia />
               </div>

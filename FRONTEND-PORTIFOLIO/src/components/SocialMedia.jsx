@@ -1,60 +1,28 @@
 import React from "react";
 import { IoLogoInstagram } from "react-icons/io";
 import { IoLogoWhatsapp } from "react-icons/io5";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-export default function SocialMedia () {
-    const InstaRedirect = () => {
-        window.open('https://instagram.com/ayran.code', '_blank');
-    };
-    const GitHubRedirect = () => {
-        window.open('https://github.com/ayrandev', '_blank');
-    };
-    const LinkedinRedirect = () => {
-        window.open('https://www.linkedin.com/in/ayran-vieira-dev/', '_blank');
-    };
-    const WhatsappRedirect = () => {
-        window.open('https://wa.me/+5585985398517', '_blank');
-    };
+const socialLinks = [
+  { name: "Instagram", icon: <IoLogoInstagram size={40} />, url: "https://instagram.com/ayran.code" },
+  { name: "GitHub", icon: <FaGithub size={40} />, url: "https://github.com/ayrandev" },
+  { name: "LinkedIn", icon: <FaLinkedin size={40} />, url: "https://www.linkedin.com/in/ayran-vieira-dev/" },
+  { name: "WhatsApp", icon: <IoLogoWhatsapp size={40} />, url: "https://wa.me/+5585985398517" },
+];
 
-    return (
-        <div className="grid grid-cols-2 gap-8 sm:flex sm:flex sm:w-[100%] items-center">
-            {/* Card Instagram */}
-            <div
-                className="flex flex-col w-[100%] items-center justify-center p-4 bg-black bg-opacity-50 rounded-lg shadow-lg hover:scale-105 cursor-pointer transition-all duration-300 ease-in-out"
-                onClick={InstaRedirect}
-            >
-                <IoLogoInstagram size={40} className="text-indigo-100 hover:text-[#A8E5E6]" />
-                <span className="mt-2 text-white font-semibold">Instagram</span>
-            </div>
-
-            {/* Card GitHub */}
-            <div
-                className="flex flex-col w-[100%] items-center justify-center p-4 bg-black bg-opacity-50 rounded-lg shadow-lg hover:scale-105 cursor-pointer transition-all duration-300 ease-in-out"
-                onClick={GitHubRedirect}
-            >
-                <FaGithub size={40} className="text-indigo-100 hover:text-[#A8E5E6]" />
-                <span className="mt-2 text-white font-semibold">GitHub</span>
-            </div>
-
-            {/* Card LinkedIn */}
-            <div
-                className="flex flex-col w-[100%] items-center justify-center p-4 bg-black bg-opacity-50 rounded-lg shadow-lg hover:scale-105 cursor-pointer transition-all duration-300 ease-in-out"
-                onClick={LinkedinRedirect}
-            >
-                <FaLinkedin size={40} className="text-indigo-100 hover:text-[#A8E5E6]" />
-                <span className="mt-2 text-white font-semibold">LinkedIn</span>
-            </div>
-
-            {/* Card WhatsApp */}
-            <div
-                className="flex flex-col w-[100%] items-center justify-center p-4 bg-black bg-opacity-50 rounded-lg shadow-lg hover:scale-105 cursor-pointer transition-all duration-300 ease-in-out"
-                onClick={WhatsappRedirect}
-            >
-                <IoLogoWhatsapp size={40} className="text-indigo-100 hover:text-[#A8E5E6]" />
-                <span className="mt-2 text-white font-semibold">WhatsApp</span>
-            </div>
+export default function SocialMedia() {
+  return (
+    <div className="grid grid-cols-2 gap-8 sm:flex sm:w-full items-center">
+      {socialLinks.map(({ name, icon, url }) => (
+        <div
+          key={name}
+          className="flex flex-col w-full items-center justify-center p-4 bg-black bg-opacity-50 rounded-lg shadow-lg hover:scale-105 cursor-pointer transition-all duration-300 ease-in-out"
+          onClick={() => window.open(url, "_blank")}
+        >
+          <div className="text-indigo-100 hover:text-[#A8E5E6]">{icon}</div>
+          <span className="mt-2 text-white font-semibold">{name}</span>
         </div>
-    );
+      ))}
+    </div>
+  );
 }
