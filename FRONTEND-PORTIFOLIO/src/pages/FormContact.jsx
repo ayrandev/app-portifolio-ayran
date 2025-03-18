@@ -6,6 +6,9 @@ import GifBackGround from "../components/GifBackGround";
 import axios from "axios";
 
 export default function FormContact() {
+
+  const apiUrl = process.env.REACT_APP_API_URL;
+
   return (
     <section id="Contact" className="relative flex flex-col min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950">
       <GifBackGround />
@@ -27,7 +30,7 @@ export default function FormContact() {
                   const data = Object.fromEntries(formData);
 
                   try {
-                    const response = await axios.post("http://localhost:3000/form", data, {
+                    const response = await axios.post(`${apiUrl}`, data, {
                       headers: {
                         "Content-Type": "application/json",
                       },
