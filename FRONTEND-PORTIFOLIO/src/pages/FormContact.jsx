@@ -30,7 +30,7 @@ export default function FormContact() {
                   const data = Object.fromEntries(formData);
 
                   try {
-                    const response = await axios.post(`${apiUrl}`, data, {
+                    const response = await axios.post(`${apiUrl}form`, data, {
                       headers: {
                         "Content-Type": "application/json",
                       },
