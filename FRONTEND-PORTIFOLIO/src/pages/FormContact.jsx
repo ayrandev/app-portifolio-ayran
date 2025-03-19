@@ -27,10 +27,11 @@ export default function FormContact() {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${apiUrl}`, formData, {
+      const response = await axios.post(`${apiUrl}/form`, formData, {
         headers: {
           "Content-Type": "application/json",
         },
+        withCredentials: true,
       });
 
       if (response.status === 200) {
