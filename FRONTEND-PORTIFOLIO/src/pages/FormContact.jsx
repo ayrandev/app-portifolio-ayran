@@ -7,7 +7,8 @@ import axios from "axios";
 
 
 export default function FormContact() {
-  const apiUrl = import.meta.env.VITE_API_URL;
+  
+  const apiUrl = "https://back-end-portifolio-ayran.vercel.app/form";
 
   // Estados para os campos do formulário
   const [formData, setFormData] = useState({
@@ -27,7 +28,7 @@ export default function FormContact() {
     e.preventDefault();
 
     try {
-      const response = await axios.post(`${apiUrl}/form`, formData, {
+      const response = await axios.post(`${apiUrl}`, formData, {
         headers: {
           "Content-Type": "application/json",
         },

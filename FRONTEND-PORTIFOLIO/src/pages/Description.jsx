@@ -10,7 +10,7 @@ export default function Description() {
       className="relative fle justify-center items-center min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 pt-28 sm:pt-32"
     >
       <GifBackGround />
-      <div className="flex flex-col-reverse sm:flex-row-reverse items-center gap-16 max-w-6xl w-full">
+      <div className="flex flex-col-reverse sm:flex-row-reverse items-center sm:justify-center sm:gap-28 gap-12 w-full">
         <div className="flex flex-col items-center sm:items-start text-center sm:text-left max-w-lg">
           <p className="font-[Poppins] text-sm sm:text-base text-indigo-100">Olá, eu sou:</p>
           <h1 className="font-[Poppins] text-4xl sm:text-6xl bg-gradient-to-r from-blue-500 via-[#00FFEA] to-green-500 text-transparent bg-clip-text">
