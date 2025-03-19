@@ -16,21 +16,21 @@ export default function Description() {
           <h1 className="font-[Poppins] text-4xl sm:text-6xl bg-gradient-to-r from-blue-500 via-[#00FFEA] to-green-500 text-transparent bg-clip-text">
             Ayran Vieira
           </h1>
-          <span className="font-[Poppins] font-bold text-lg sm:text-2xl text-indigo-100">Desenvolvedor </span>
+          <span className="font-[Poppins] text-2xl sm:text-2xl text-indigo-100">Desenvolvedor </span>
           <ReactTyped
             strings={[
-              "<span class='font-mono font-bold text-xl sm:text-2xl text-[#00FFEA]'>WEB</span>",
-              "<span class='font-mono font-bold text-xl sm:text-2xl text-[#00FFEA]'>Full Stack</span>",
-              "<span class='font-mono font-bold text-xl sm:text-2xl text-[#00FFEA]'>Criativo</span>",
-              "<span class='font-mono font-bold text-xl sm:text-2xl text-[#00FFEA]'>Dinâmico</span>",
-              "<span class='font-mono font-bold text-xl sm:text-2xl text-[#00FFEA]'>Inovador</span>",
+              "<span class='font-mono font-bold text-2xl sm:text-2xl text-[#00FFEA]'>WEB</span>",
+              "<span class='font-mono font-bold text-2xl sm:text-2xl text-[#00FFEA]'>Full Stack</span>",
+              "<span class='font-mono font-bold text-2xl sm:text-2xl text-[#00FFEA]'>Criativo</span>",
+              "<span class='font-mono font-bold text-2xl sm:text-2xl text-[#00FFEA]'>Dinâmico</span>",
+              "<span class='font-mono font-bold text-2xl sm:text-2xl text-[#00FFEA]'>Inovador</span>",
             ]}
             typeSpeed={40}
             backSpeed={40}
             loop
             cursorChar="<span class='text-white'>|</span>"
           />
-          <p className="font-[Poppins] text-lg sm:text-2xl font-mono text-white mt-4 max-w-md">
+          <p className="font-[Poppins] text-xl w-[20rem] sm:text-2xl  text-white mt-4 max-w-md">
             Transformando ideias em experiências digitais impactantes.
           </p>
         </div>
