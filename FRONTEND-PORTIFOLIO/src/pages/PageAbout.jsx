@@ -25,7 +25,7 @@ export default function CardsAbout() {
     
     {/* Soft-Skills */}
     <div className="text-center w-full min-h-[400px] sm:min-h-[500px] max-w-lg">
-      <h1 className="mb-4 text-3xl md:text-4xl font-[Poppins] text-indigo-100 border-b border-[#00FFEA] pb-2">
+      <h1 className="text-4xl text-center text-transparent bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 font-[Poppins] bg-clip-text border-b border-[#00FFEA] pb-2">
         Soft-Skills
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4">
@@ -48,7 +48,7 @@ export default function CardsAbout() {
 
     {/* Hard-Skills */}
     <div className="text-center w-full min-h-[400px] sm:min-h-[500px] max-w-lg">
-      <h1 className="mb-4 text-3xl md:text-4xl font-[Poppins] text-indigo-100 border-b border-[#00FFEA] pb-2">
+      <h1 className="text-4xl text-center text-transparent bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 font-[Poppins] bg-clip-text border-b border-[#00FFEA] pb-2">
         Hard-Skills
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-4">

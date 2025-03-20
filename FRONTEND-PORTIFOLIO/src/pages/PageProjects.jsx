@@ -14,7 +14,7 @@ export default function PageProjects() {
     <section id="Projects" className="relative justify-items-center min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 px-4 sm:py-10 py-24">
       <GifBackGround />
       <div className="mb-4 border-b-[1px] border-[#00FFEA] w-full max-w-lg text-center pt-4">
-        <h1 className="text-4xl font-[Poppins] text-indigo-100 mb-2">
+        <h1 className="text-4xl text-center text-transparent bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 font-[Poppins] bg-clip-text">
           Meus Projetos
         </h1>
       </div>
