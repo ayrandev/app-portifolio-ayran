@@ -8,7 +8,7 @@ import axios from "axios";
 
 export default function FormContact() {
 
-  const apiUrl = "https://back-end-portifolio-alpha.vercel.app/form";
+const apiUrl = "https://back-end-portifolio-alpha.vercel.app/form";
 
   // Estados para os campos do formulário
   const [formData, setFormData] = useState({

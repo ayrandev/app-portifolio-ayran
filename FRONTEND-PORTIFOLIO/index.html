@@ -7,6 +7,27 @@
     <title>Portifólio - Ayran Vieira - Desenvolvedor</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeInDelay {
+    from { opacity: 0; transform: translateY(20px); }
+    50% { opacity: 0; }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .animate-fadeInDelay {
+    animation: fadeInDelay 1.3s ease forwards;
+  }
+</style>
+
   </head>
   <body>
     <div id="root"></div>
