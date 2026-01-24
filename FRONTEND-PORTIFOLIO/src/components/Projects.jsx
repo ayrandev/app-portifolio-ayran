@@ -4,10 +4,38 @@ import { MdLaptopChromebook } from "react-icons/md";
 import LandingPage from "../assets/landing-page.jpeg";
 import JogoDoNumeroSecreto from "../assets/jogo-do-numero-secreto.jpeg";
 import Portifolio from "../assets/Portifolio-tecnico.jpeg";
+import FlightOnTime from "../assets/FlightOnTime.jpeg";
 
 const projects = [
-  {
+      {
     id: 1,
+    image: FlightOnTime,
+    title: "Flight On Time",
+    description:
+      "Aplicação criada para fornecer previsão de voos nacionais e internacionais, com o ituito de ajudar o cliente final a prever futuros atrasos em seus voos.",
+    buttons: [
+      {
+        name: "Deploy",
+        icon: <MdLaptopChromebook />,
+        action: () =>
+          window.open(
+            "https://tech-flight.vercel.app/",
+            "_blank"
+          ),
+      },
+      {
+        name: "Coding",
+        icon: <FaGithub />,
+        action: () =>
+          window.open(
+            "https://github.com/orgs/Projeto-3-FlightOnTime/repositories",
+            "_blank"
+          ),
+      },
+    ],
+  },
+  {
+    id: 2,
     image: LandingPage,
     title: "Landing Page",
     description:
@@ -31,7 +59,7 @@ const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     image: JogoDoNumeroSecreto,
     title: "Jogo do Número Secreto",
     description:
@@ -58,7 +86,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     image: Portifolio,
     title: "Portifólio Técnico",
     description:
@@ -84,6 +112,7 @@ const projects = [
       },
     ],
   },
+
 ];
 
 export default projects;
