@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import Button from "../components/Button";
 import Cards from "../components/Cards";
 import GifBackGround from "../components/GifBackGround";
@@ -14,6 +15,7 @@ import {
 } from "react-icons/si";
 
 export default function CardsAbout() {
+  const { t } = useTranslation();
 
   /* -------------------- FADE ON SCROLL -------------------- */
   useEffect(() => {
@@ -43,28 +45,20 @@ export default function CardsAbout() {
     document.body.removeChild(link);
   };
 
-  /* -------------------- SOFT SKILLS -------------------- */
-  const softSkills = [
-    { title: "Comunicação clara", description: "Transmito ideias técnicas com objetividade para facilitar o alinhamento da equipe." },
-    { title: "Resolução de Problemas", description: "Analiso cenários, encontro causas e implemento soluções eficientes." },
-    { title: "Aprendizado contínuo", description: "Evolução diária estudando tecnologias e boas práticas." },
-    { title: "Colaboração", description: "Experiência em projetos full stack com equipes multidisciplinares." },
-    { title: "Adaptabilidade", description: "Flexibilidade para mudanças de escopo e novas ferramentas." },
-    { title: "Proatividade", description: "Antecipação de necessidades e melhoria constante." },
-    { title: "Gestão de Tempo", description: "Organização com métodos como Pomodoro e listas de prioridade." },
-  ];
+  /* -------------------- I18N DATA -------------------- */
+  const softSkills = t("about.soft.skills", { returnObjects: true });
+  const hardSkills = t("about.hard.skills", { returnObjects: true });
 
-  /* -------------------- HARD SKILLS -------------------- */
-  const hardSkills = [
-    { Icon: <FaJava className="text-4xl text-red-500" />, title: "Java", description: "Linguagem principal para back-end." },
-    { Icon: <SiSpringboot className="text-4xl text-green-500" />, title: "Spring Boot", description: "Criação de APIs robustas e escaláveis." },
-    { Icon: <SiPostgresql className="text-4xl text-blue-500" />, title: "PostgreSQL", description: "Banco de dados moderno e poderoso." },
-    { Icon: <GrMysql className="text-4xl text-blue-800" />, title: "MySQL", description: "Banco relacional para sistemas robustos." },
-    { Icon: <SiOracle className="text-4xl text-red-600" />, title: "OCI", description: "Serviços na Oracle Cloud Infrastructure." },
-    { Icon: <FaReact className="text-4xl text-indigo-500" />, title: "React.js", description: "Interfaces modernas e responsivas." },
-    { Icon: <IoLogoJavascript className="text-4xl text-yellow-400" />, title: "JavaScript", description: "Base da web moderna." },
-    { Icon: <IoLogoCss3 className="text-4xl text-blue-500" />, title: "CSS3", description: "Estilização avançada para web." },
-    { Icon: <SiAxios className="text-4xl text-blue-400" />, title: "Axios", description: "Requisições HTTP com Promises." },
+  const hardSkillIcons = [
+    <FaJava className="text-4xl text-red-500" />,
+    <SiSpringboot className="text-4xl text-green-500" />,
+    <SiPostgresql className="text-4xl text-blue-500" />,
+    <GrMysql className="text-4xl text-blue-800" />,
+    <SiOracle className="text-4xl text-red-600" />,
+    <FaReact className="text-4xl text-indigo-500" />,
+    <IoLogoJavascript className="text-4xl text-yellow-400" />,
+    <IoLogoCss3 className="text-4xl text-blue-500" />,
+    <SiAxios className="text-4xl text-blue-400" />,
   ];
 
   return (
@@ -100,7 +94,7 @@ export default function CardsAbout() {
             style={{ "--delay": "0s" }}
           >
             <h1 className="text-3xl text-center text-transparent bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 font-[Poppins] bg-clip-text pb-4 border-b border-[#00FFEA]">
-              Soft Skills
+              {t("about.soft.title")}
             </h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mt-6">
@@ -126,12 +120,12 @@ export default function CardsAbout() {
                     "_blank"
                   )
                 }
-                name="LinkedIn"
+                name={t("about.soft.buttons.linkedin")}
                 Icon={<FaLinkedin />}
               />
               <Button
                 onClick={() => downloadFile("ProfileFeedback.pdf")}
-                name="Big Five"
+                name={t("about.soft.buttons.profile")}
                 Icon={<FaDownload />}
               />
             </div>
@@ -143,7 +137,7 @@ export default function CardsAbout() {
             style={{ "--delay": "0.15s" }}
           >
             <h1 className="text-3xl text-center text-transparent bg-gradient-to-r from-blue-800 via-green-300 to-indigo-100 font-[Poppins] bg-clip-text pb-4 border-b border-[#00FFEA]">
-              Hard Skills
+              {t("about.hard.title")}
             </h1>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 mt-6">
@@ -154,7 +148,7 @@ export default function CardsAbout() {
                   style={{ "--delay": `${i * 0.08}s` }}
                 >
                   <Cards
-                    Icon={skill.Icon}
+                    Icon={hardSkillIcons[i]}
                     title={skill.title}
                     description={skill.description}
                   />
@@ -170,12 +164,12 @@ export default function CardsAbout() {
                 onClick={() =>
                   window.open("https://github.com/ayrandev", "_blank")
                 }
-                name="GitHub"
+                name={t("about.hard.buttons.github")}
                 Icon={<FaGithub />}
               />
               <Button
                 onClick={() => downloadFile("curriculo.pdf")}
-                name="Currículo"
+                name={t("about.hard.buttons.resume")}
                 Icon={<FaDownload />}
               />
             </div>

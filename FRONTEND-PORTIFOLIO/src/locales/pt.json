@@ -1,0 +1,160 @@
+{
+  "home": {
+    "welcome": "Bem-vindo",
+    "subtitle": "Escolha como você quer se conectar comigo",
+    "client": "Preciso de um projeto",
+    "recruiter": "Sou empresa / recrutador",
+    "footer": "Desenvolvido por"
+  },
+
+  "dev": {
+    "intro": {
+      "greeting": "Olá, eu sou:",
+      "name": "Ayran Vieira",
+      "description": "Desenvolvedor Full Stack especializado em Java - Spring Boot e ReactJS. Crio APIs escaláveis e soluções em OCI (Oracle Cloud) eficientes. Movido por transformar ideias em sistemas robustos e de alto desempenho."
+    }
+  },
+
+  "client": {
+    "hero": {
+      "title": "Seu site profissional começa aqui",
+      "subtitle": "Desenvolvimento de sites modernos, rápidos e responsivos para profissionais e empresas que querem se destacar no digital com autoridade e credibilidade."
+    },
+
+    "benefits": {
+      "professional": {
+        "title": "Presença profissional",
+        "text": "Design estratégico que fortalece sua marca e gera confiança imediata."
+      },
+      "responsive": {
+        "title": "Responsividade total",
+        "text": "Experiência perfeita em celulares, tablets e desktops."
+      },
+      "performance": {
+        "title": "Alta performance",
+        "text": "Sites rápidos, leves e otimizados para experiência do usuário."
+      }
+    },
+
+    "cta": {
+      "button": "Solicitar orçamento",
+      "helper": "Atendimento rápido • Sem compromisso"
+    }
+  },
+
+  "about": {
+    "soft": {
+      "title": "Soft Skills",
+
+      "skills": [
+        {
+          "title": "Comunicação clara",
+          "description": "Transmito ideias técnicas com objetividade para facilitar o alinhamento da equipe."
+        },
+        {
+          "title": "Resolução de Problemas",
+          "description": "Analiso cenários, encontro causas e implemento soluções eficientes."
+        },
+        {
+          "title": "Aprendizado contínuo",
+          "description": "Evolução diária estudando tecnologias e boas práticas."
+        },
+        {
+          "title": "Colaboração",
+          "description": "Experiência em projetos full stack com equipes multidisciplinares."
+        },
+        {
+          "title": "Adaptabilidade",
+          "description": "Flexibilidade para mudanças de escopo e novas ferramentas."
+        },
+        {
+          "title": "Proatividade",
+          "description": "Antecipação de necessidades e melhoria constante."
+        },
+        {
+          "title": "Gestão de Tempo",
+          "description": "Organização com métodos como Pomodoro e listas de prioridade."
+        }
+      ],
+
+      "buttons": {
+        "linkedin": "LinkedIn",
+        "profile": "Big Five"
+      }
+    },
+
+    "hard": {
+      "title": "Hard Skills",
+
+      "skills": [
+        {
+          "title": "Java",
+          "description": "Linguagem principal para back-end."
+        },
+        {
+          "title": "Spring Boot",
+          "description": "Criação de APIs robustas e escaláveis."
+        },
+        {
+          "title": "PostgreSQL",
+          "description": "Banco de dados moderno e poderoso."
+        },
+        {
+          "title": "MySQL",
+          "description": "Banco relacional para sistemas robustos."
+        },
+        {
+          "title": "OCI",
+          "description": "Serviços na Oracle Cloud Infrastructure."
+        },
+        {
+          "title": "React.js",
+          "description": "Interfaces modernas e responsivas."
+        },
+        {
+          "title": "JavaScript",
+          "description": "Base da web moderna."
+        },
+        {
+          "title": "CSS3",
+          "description": "Estilização avançada para web."
+        },
+        {
+          "title": "Axios",
+          "description": "Requisições HTTP com Promises."
+        }
+      ],
+
+      "buttons": {
+        "github": "GitHub",
+        "resume": "Currículo"
+      }
+    }
+  },
+
+  "projects": {
+    "items": [
+      {
+        "title": "Flight On Time",
+        "description": "MVP desenvolvido em hackathon para prever probabilidades de atraso de voos, resolvendo a imprevisibilidade no planejamento aéreo. A solução integra Data Science para análise de padrões, Spring Boot no back-end com API REST e React no front-end para exibição clara dos resultados."
+      },
+      {
+        "title": "Site Sonatta Music",
+        "description": "Site institucional da Sonatta, banda voltada a casamentos e eventos. Desenvolvido com React e Tailwind, focado em design elegante, responsividade e conversão, integrando formulário de orçamento direto ao WhatsApp."
+      },
+      {
+        "title": "Jogo do Número Secreto",
+        "description": "Jogo desenvolvido com HTML, CSS e JavaScript puro, usando a API ResponsiveVoice para leitura de voz. Totalmente responsivo."
+      },
+      {
+        "title": "Portifólio Técnico",
+        "description": "Projeto criado em React.js com TailwindCSS e Axios para envio de formulários ao back-end."
+      }
+    ],
+
+    "buttons": {
+      "deploy": "Deploy",
+      "code": "Código"
+    }
+  }
+}

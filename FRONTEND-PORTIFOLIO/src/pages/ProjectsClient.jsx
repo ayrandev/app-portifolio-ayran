@@ -26,17 +26,15 @@ export default function ProjectsClient() {
         {projectsClient.map((project) => (
           <div
             key={project.id}
-            className="bg-black/40 backdrop-blur-md border border-[#00FFEA] rounded-xl p-6 flex flex-col justify-between"
+            className="bg-black/40 backdrop-blur-md border border-[#00FFEA] rounded-xl p-6 flex flex-col"
           >
-            {/* Imagem */}
             <img
               src={project.image}
               alt={project.title}
               className="rounded-lg mb-5 object-cover h-44 w-full"
             />
 
-            {/* Conteúdo */}
-            <div>
+            <div className="flex-1">
               <h3 className="text-xl text-white font-semibold mb-3">
                 {project.title}
               </h3>
@@ -52,12 +50,18 @@ export default function ProjectsClient() {
               </ul>
             </div>
 
-            {/* CTA */}
-            <Button
-              text="Solicitar orçamento"
-              link="#contato"
-              className="bg-green-600 hover:bg-green-700 w-full"
-            />
+            {/* BOTÕES */}
+          <div className="flex flex-col sm:flex-row justify-center gap-3">
+            {project.buttons.map((btn, index) => (
+              <Button
+                key={index}
+                Icon={btn.Icon}
+                name={btn.name}
+                onClick={btn.onClick}
+              />
+            ))}
+          </div>
+
           </div>
         ))}
       </div>

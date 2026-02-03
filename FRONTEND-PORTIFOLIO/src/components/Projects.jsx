@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa";
 import { MdLaptopChromebook } from "react-icons/md";
 
-import LandingPage from "../assets/landing-page.jpeg";
+import SonattaSite from "../assets/sonatta_site.jpeg";
 import JogoDoNumeroSecreto from "../assets/jogo-do-numero-secreto.jpeg";
 import Portifolio from "../assets/Portifolio-tecnico.jpeg";
 import FlightOnTime from "../assets/FlightOnTime.jpeg";
@@ -12,7 +12,7 @@ const projects = [
     image: FlightOnTime,
     title: "Flight On Time",
     description:
-      "Aplicação criada para fornecer previsão de voos nacionais e internacionais, com o ituito de ajudar o cliente final a prever futuros atrasos em seus voos.",
+      "MVP desenvolvido em hackathon para prever probabilidades de atraso de voos, resolvendo a imprevisibilidade no planejamento aéreo. A solução integra Data Science para análise de padrões, Spring Boot no back-end com API REST e React no front-end para exibição clara dos resultados.",
     buttons: [
       {
         name: "Deploy",
@@ -36,25 +36,16 @@ const projects = [
   },
   {
     id: 2,
-    image: LandingPage,
-    title: "Landing Page",
+    image: SonattaSite,
+    title: "Site Sonatta Music",
     description:
-      "Projeto desenvolvido para captação de clientes com estrutura simples em HTML e CSS puro, focado em conversão.",
+      "Site institucional da Sonatta, banda voltada a casamentos e eventos. Desenvolvido com React e Tailwind, focado em design elegante, responsividade e conversão, integrando formulário de orçamento direto ao WhatsApp.",
     buttons: [
       {
         name: "Deploy",
         icon: <MdLaptopChromebook />,
         action: () =>
-          window.open("https://app-landing-page-ayran.vercel.app/", "_blank"),
-      },
-      {
-        name: "Coding",
-        icon: <FaGithub />,
-        action: () =>
-          window.open(
-            "https://github.com/ayrandev/app-portifolio-ayran",
-            "_blank"
-          ),
+          window.open("https://sonattamusic.vercel.app/", "_blank"),
       },
     ],
   },
@@ -97,7 +88,7 @@ const projects = [
         icon: <MdLaptopChromebook />,
         action: () =>
           window.open(
-            "https://jogo-do-numero-secreto-eight-beta-36.vercel.app/",
+            "https://ayran-vieira-dev.vercel.app/",
             "_blank"
           ),
       },
@@ -106,7 +97,7 @@ const projects = [
         icon: <FaGithub />,
         action: () =>
           window.open(
-            "https://github.com/ayrandev/app-jogo-do-numero-secreto",
+            "https://github.com/ayrandev/app-portifolio-ayran",
             "_blank"
           ),
       },
