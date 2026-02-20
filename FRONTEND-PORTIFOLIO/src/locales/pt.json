@@ -17,8 +17,10 @@
 
   "client": {
     "hero": {
-      "title": "Seu site profissional começa aqui",
-      "subtitle": "Desenvolvimento de sites modernos, rápidos e responsivos para profissionais e empresas que querem se destacar no digital com autoridade e credibilidade."
+    "title": "Seu site profissional começa aqui",
+    "subtitle": "Presença digital moderna, rápida e pronta para vender.",
+    "price": "Planos a partir de R$ 399",
+    "socialProof": "Empreendedores já estão modernizando seus negócios."
     },
 
     "benefits": {
@@ -38,7 +40,7 @@
 
     "cta": {
       "button": "Solicitar orçamento",
-      "helper": "Atendimento rápido • Sem compromisso"
+      "trust": "Resposta rápida • Atendimento personalizado"
     }
   },
 

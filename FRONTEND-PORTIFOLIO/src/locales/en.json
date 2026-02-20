@@ -18,7 +18,9 @@
   "client": {
     "hero": {
       "title": "Your professional website starts here",
-      "subtitle": "Development of modern, fast and responsive websites for professionals and companies that want to stand out digitally with authority and credibility."
+      "subtitle": "Modern, fast and built to generate results.",
+      "price": "Plans starting at $399",
+      "socialProof": "Entrepreneurs are already modernizing their businesses."
     },
     "benefits": {
       "professional": {
@@ -36,7 +38,7 @@
     },
     "cta": {
       "button": "Request a quote",
-      "helper": "Fast support • No commitment"
+      "trust": "Fast response • Personalized service"
     }
   },
 

@@ -9,32 +9,32 @@ export default function DescriptionClient() {
     <section className="relative min-h-screen flex items-center justify-center px-6 bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950">
       <GifBackGround />
 
-      <div className="relative max-w-5xl text-center space-y-10 z-10">
-        <h1 className="text-3xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-[#00FFEA] via-[#4FD1C5] to-indigo-200 bg-clip-text">
+      <div className="relative max-w-4xl text-center space-y-8 z-10">
+
+        {/* HEADLINE */}
+        <h1 className="text-3xl md:text-5xl font-extrabold text-transparent bg-gradient-to-r from-[#00FFEA] via-[#4FD1C5] to-indigo-200 bg-clip-text leading-tight">
           {t("client.hero.title")}
         </h1>
 
-        <p className="text-indigo-200/90 text-base md:text-lg max-w-3xl mx-auto">
+        {/* SUBHEADLINE */}
+        <p className="text-lg md:text-xl text-indigo-200/80 font-light">
           {t("client.hero.subtitle")}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-          {["professional", "responsive", "performance"].map((key) => (
-            <div
-              key={key}
-              className="bg-black/40 backdrop-blur-md border border-[#00FFEA]/20 rounded-2xl p-6"
-            >
-              <h3 className="text-white font-semibold text-lg mb-3">
-                {t(`client.benefits.${key}.title`)}
-              </h3>
-              <p className="text-indigo-200/80 text-sm">
-                {t(`client.benefits.${key}.text`)}
-              </p>
-            </div>
-          ))}
+        {/* MICRO PROVA SOCIAL */}
+        <p className="text-sm text-indigo-200/60 tracking-wide">
+          {t("client.hero.socialProof")}
+        </p>
+
+        {/* PREÇO PREMIUM */}
+        <div className="inline-block px-6 py-2 rounded-full border border-[#00FFEA]/30 bg-black/40 backdrop-blur-sm">
+          <span className="text-[#00FFEA] font-semibold text-lg">
+            {t("client.hero.price")}
+          </span>
         </div>
 
-        <div className="mt-14 flex flex-col items-center gap-3">
+        {/* CTA */}
+        <div className="pt-4">
           <Button
             name={t("client.cta.button")}
             onClick={() =>
@@ -44,11 +44,13 @@ export default function DescriptionClient() {
               )
             }
           />
-
-          <span className="text-xs text-indigo-200/60">
-            {t("client.cta.helper")}
-          </span>
         </div>
+
+        {/* MICRO EFEITO DE CONFIANÇA */}
+        <p className="text-xs text-indigo-200/40 pt-2">
+          {t("client.cta.trust")}
+        </p>
+
       </div>
     </section>
   );
