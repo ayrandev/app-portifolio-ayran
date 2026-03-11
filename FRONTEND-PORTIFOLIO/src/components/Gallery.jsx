@@ -1,4 +1,9 @@
+import { useTranslation } from "react-i18next";
+
 export default function Gallery({ image, Icon, title, description, Buttons, className }) {
+
+  const { t } = useTranslation();
+
   return (
     <div
       className={`relative flex flex-col rounded-lg shadow-lg bg-zinc-800 overflow-hidden ${className}
@@ -8,12 +13,12 @@ export default function Gallery({ image, Icon, title, description, Buttons, clas
       <div className="absolute inset-0 w-full h-full">
         <img
           src={image}
-          alt={title || "Projeto"}
+          alt={t(title) || "Projeto"}
           className="object-cover w-full h-full opacity-50"
         />
       </div>
 
-      {/* Conteúdo na parte inferior */}
+      {/* Conteúdo */}
       <div
         className="
           absolute bottom-0 left-0 right-0 z-10 flex flex-col gap-2
@@ -26,13 +31,13 @@ export default function Gallery({ image, Icon, title, description, Buttons, clas
 
         {/* Título */}
         <h3 className="text-lg sm:text-xl font-bold font-mono text-indigo-100">
-          {title}
+          {t(title)}
         </h3>
 
         {/* Descrição */}
         {description && (
           <p className="text-xs sm:text-sm md:text-base text-gray-200 leading-relaxed">
-            {description}
+            {t(description)}
           </p>
         )}
 

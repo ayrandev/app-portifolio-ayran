@@ -145,6 +145,14 @@
       {
         "title": "Technical Portfolio",
         "description": "Project built with React.js, TailwindCSS, and Axios for sending forms to the back-end."
+      },
+      {
+      "justinaVirtual": {
+        "title": "Justina Virtual",
+        "description": "Medical virtual assistant built with React and integrated with a Java Spring Boot backend. The system supports user registration, secure authentication with JWT, and interaction with artificial intelligence to assist doctors with diagnostic support and clinical information.",
+        "deploy": "Deploy",
+        "code": "Code"
+      }
       }
     ],
     "buttons": {

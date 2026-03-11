@@ -1,27 +1,59 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaBook } from "react-icons/fa";
 import { MdLaptopChromebook } from "react-icons/md";
 
 import SonattaSite from "../assets/sonatta_site.jpeg";
 import JogoDoNumeroSecreto from "../assets/jogo-do-numero-secreto.jpeg";
 import Portifolio from "../assets/Portifolio-tecnico.jpeg";
 import FlightOnTime from "../assets/FlightOnTime.jpeg";
+import JustinaVirtual from "../assets/JustinaVirtual.jpeg";
 
 const projects = [
-      {
+  {
     id: 1,
-    image: FlightOnTime,
-    title: "Flight On Time",
-    description:
-      "MVP desenvolvido em hackathon para prever probabilidades de atraso de voos, resolvendo a imprevisibilidade no planejamento aéreo. A solução integra Data Science para análise de padrões, Spring Boot no back-end com API REST e React no front-end para exibição clara dos resultados.",
+    image: JustinaVirtual,
+    title: "projects.justina.title",
+    description: "projects.justina.description",
     buttons: [
       {
-        name: "Deploy",
+        name: "Aplication",
         icon: <MdLaptopChromebook />,
         action: () =>
           window.open(
-            "https://tech-flight.vercel.app/",
+            "https://s02-26-e25-justina-virtual.vercel.app/",
             "_blank"
           ),
+      },
+      {
+        name: "Coding",
+        icon: <FaGithub />,
+        action: () =>
+          window.open(
+            "https://github.com/ayrandev/justina-simulator/tree/dev",
+            "_blank"
+          ),
+      },
+      {
+        name: "Docs",
+        icon: <FaBook />,
+        action: () =>
+          window.open(
+            "https://github.com/ayrandev/justina-simulator/blob/dev/README.md",
+            "_blank"
+          ),
+      },
+    ],
+  },
+  {
+    id: 2,
+    image: FlightOnTime,
+    title: "projects.flightOnTime.title",
+    description: "projects.flightOnTime.description",
+    buttons: [
+      {
+        name: "Aplication",
+        icon: <MdLaptopChromebook />,
+        action: () =>
+          window.open("https://tech-flight.vercel.app/", "_blank"),
       },
       {
         name: "Coding",
@@ -32,17 +64,25 @@ const projects = [
             "_blank"
           ),
       },
+      {
+        name: "Docs",
+        icon: <FaBook />,
+        action: () =>
+          window.open(
+            "https://github.com/Projeto-3-FlightOnTime",
+            "_blank"
+          ),
+      },
     ],
   },
   {
-    id: 2,
+    id: 3,
     image: SonattaSite,
-    title: "Site Sonatta Music",
-    description:
-      "Site institucional da Sonatta, banda voltada a casamentos e eventos. Desenvolvido com React e Tailwind, focado em design elegante, responsividade e conversão, integrando formulário de orçamento direto ao WhatsApp.",
+    title: "projects.sonatta.title",
+    description: "projects.sonatta.description",
     buttons: [
       {
-        name: "Deploy",
+        name: "Aplication",
         icon: <MdLaptopChromebook />,
         action: () =>
           window.open("https://sonattamusic.vercel.app/", "_blank"),
@@ -50,41 +90,13 @@ const projects = [
     ],
   },
   {
-    id: 3,
-    image: JogoDoNumeroSecreto,
-    title: "Jogo do Número Secreto",
-    description:
-      "Jogo desenvolvido com HTML, CSS e JavaScript puro, usando a API ResponsiveVoice para leitura de voz. Totalmente responsivo.",
-    buttons: [
-      {
-        name: "Deploy",
-        icon: <MdLaptopChromebook />,
-        action: () =>
-          window.open(
-            "https://jogo-do-numero-secreto-eight-beta-36.vercel.app/",
-            "_blank"
-          ),
-      },
-      {
-        name: "Coding",
-        icon: <FaGithub />,
-        action: () =>
-          window.open(
-            "https://github.com/ayrandev/app-jogo-do-numero-secreto",
-            "_blank"
-          ),
-      },
-    ],
-  },
-  {
     id: 4,
     image: Portifolio,
-    title: "Portifólio Técnico",
-    description:
-      "Projeto criado em React.js com TailwindCSS e Axios para envio de formulários ao back-end.",
+    title: "projects.portfolio.title",
+    description: "projects.portfolio.description",
     buttons: [
       {
-        name: "Deploy",
+        name: "Aplication",
         icon: <MdLaptopChromebook />,
         action: () =>
           window.open(
@@ -103,7 +115,32 @@ const projects = [
       },
     ],
   },
-
+  {
+    id: 5,
+    image: JogoDoNumeroSecreto,
+    title: "projects.secretNumber.title",
+    description: "projects.secretNumber.description",
+    buttons: [
+      {
+        name: "Aplication",
+        icon: <MdLaptopChromebook />,
+        action: () =>
+          window.open(
+            "https://jogo-do-numero-secreto-eight-beta-36.vercel.app/",
+            "_blank"
+          ),
+      },
+      {
+        name: "Coding",
+        icon: <FaGithub />,
+        action: () =>
+          window.open(
+            "https://github.com/ayrandev/app-jogo-do-numero-secreto",
+            "_blank"
+          ),
+      },
+    ],
+  },
 ];
 
 export default projects;

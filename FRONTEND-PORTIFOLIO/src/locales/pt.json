@@ -11,16 +11,16 @@
     "intro": {
       "greeting": "Olá, eu sou:",
       "name": "Ayran Vieira",
-      "description": "Desenvolvedor Full Stack especializado em Java - Spring Boot e ReactJS. Crio APIs escaláveis e soluções em OCI (Oracle Cloud) eficientes. Movido por transformar ideias em sistemas robustos e de alto desempenho."
+      "description": "Desenvolvedor Full Stack especializado em Java, Spring Boot e ReactJS, focado em resolver problemas complexos através de software. Trabalho na construção de APIs robustas, sistemas escaláveis e soluções eficientes, transformando desafios de negócio em aplicações confiáveis e de alto desempenho"
     }
   },
 
   "client": {
     "hero": {
-    "title": "Seu site profissional começa aqui",
-    "subtitle": "Presença digital moderna, rápida e pronta para vender.",
-    "price": "Planos a partir de R$ 399",
-    "socialProof": "Empreendedores já estão modernizando seus negócios."
+      "title": "Seu site profissional começa aqui",
+      "subtitle": "Presença digital moderna, rápida e pronta para vender.",
+      "price": "Planos a partir de R$ 399",
+      "socialProof": "Empreendedores já estão modernizando seus negócios."
     },
 
     "benefits": {
@@ -47,7 +47,6 @@
   "about": {
     "soft": {
       "title": "Soft Skills",
-
       "skills": [
         {
           "title": "Comunicação clara",
@@ -135,28 +134,30 @@
   },
 
   "projects": {
-    "items": [
-      {
-        "title": "Flight On Time",
-        "description": "MVP desenvolvido em hackathon para prever probabilidades de atraso de voos, resolvendo a imprevisibilidade no planejamento aéreo. A solução integra Data Science para análise de padrões, Spring Boot no back-end com API REST e React no front-end para exibição clara dos resultados."
-      },
-      {
-        "title": "Site Sonatta Music",
-        "description": "Site institucional da Sonatta, banda voltada a casamentos e eventos. Desenvolvido com React e Tailwind, focado em design elegante, responsividade e conversão, integrando formulário de orçamento direto ao WhatsApp."
-      },
-      {
-        "title": "Jogo do Número Secreto",
-        "description": "Jogo desenvolvido com HTML, CSS e JavaScript puro, usando a API ResponsiveVoice para leitura de voz. Totalmente responsivo."
-      },
-      {
-        "title": "Portifólio Técnico",
-        "description": "Projeto criado em React.js com TailwindCSS e Axios para envio de formulários ao back-end."
-      }
-    ],
 
-    "buttons": {
-      "deploy": "Deploy",
-      "code": "Código"
-    }
+  "justina": {
+    "title": "Justina Virtual",
+    "description": "Assistente virtual médica desenvolvida com React e integração com backend em Java Spring Boot."
+  },
+
+  "flightOnTime": {
+    "title": "Flight On Time",
+    "description": "MVP desenvolvido em hackathon para prever probabilidades de atraso de voos."
+  },
+
+  "sonatta": {
+    "title": "Site Sonatta Music",
+    "description": "Site institucional da banda Sonatta."
+  },
+
+  "portfolio": {
+    "title": "Portfólio Técnico",
+    "description": "Portfólio desenvolvido em React com Tailwind."
+  },
+
+  "secretNumber": {
+    "title": "Jogo do Número Secreto",
+    "description": "Jogo em HTML, CSS e JavaScript com ResponsiveVoice."
   }
+}
 }

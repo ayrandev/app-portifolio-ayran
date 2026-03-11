@@ -1,4 +1,9 @@
+import { useTranslation } from "react-i18next";
+
 export default function Button({ Icon, name, onClick, variant = "outline" }) {
+
+  const { t } = useTranslation();
+
   const variants = {
     outline:
       "bg-transparent border border-[#00FFEA] hover:border-[#00FFFF] text-white",
@@ -35,7 +40,7 @@ export default function Button({ Icon, name, onClick, variant = "outline" }) {
         `}
       >
         {renderIcon()}
-        <span className="text-sm font-medium">{name}</span>
+        <span className="text-sm font-medium">{t(name)}</span>
       </button>
     </div>
   );
