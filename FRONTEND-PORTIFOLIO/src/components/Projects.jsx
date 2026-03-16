@@ -69,7 +69,7 @@ const projects = [
         icon: <FaBook />,
         action: () =>
           window.open(
-            "https://github.com/Projeto-3-FlightOnTime",
+            "https://github.com/ayrandev/app-flightontop/blob/main/README.md",
             "_blank"
           ),
       },
@@ -110,32 +110,6 @@ const projects = [
         action: () =>
           window.open(
             "https://github.com/ayrandev/app-portifolio-ayran",
-            "_blank"
-          ),
-      },
-    ],
-  },
-  {
-    id: 5,
-    image: JogoDoNumeroSecreto,
-    title: "projects.secretNumber.title",
-    description: "projects.secretNumber.description",
-    buttons: [
-      {
-        name: "Aplication",
-        icon: <MdLaptopChromebook />,
-        action: () =>
-          window.open(
-            "https://jogo-do-numero-secreto-eight-beta-36.vercel.app/",
-            "_blank"
-          ),
-      },
-      {
-        name: "Coding",
-        icon: <FaGithub />,
-        action: () =>
-          window.open(
-            "https://github.com/ayrandev/app-jogo-do-numero-secreto",
             "_blank"
           ),
       },

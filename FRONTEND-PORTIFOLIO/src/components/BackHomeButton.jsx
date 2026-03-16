@@ -5,21 +5,22 @@ export default function BackToHomeButton() {
   return (
     <Link
       to="/"
+      aria-label="Voltar para a página inicial"
       className="
         fixed z-40
-        bottom-6 left-6
-        sm:top-6 sm:left-6 sm:bottom-auto
-        bg-black/70 backdrop-blur-md
+        top-6 right-6
+        bg-white/10 backdrop-blur-lg
         text-white
-        px-4 py-2
+        p-3
         rounded-full
-        flex items-center gap-2
-        border border-[#00FFEA]
-        hover:scale-105 transition-all duration-300
+        flex items-center justify-center
+        border border-white/20
+        hover:bg-white/20
+        hover:scale-105
+        transition-all duration-300
       "
     >
       <ArrowLeft size={18} />
-      <span className="hidden sm:block">Início</span>
     </Link>
   );
 }

@@ -1,28 +1,22 @@
 import { useTranslation } from "react-i18next";
 
-export default function Button({ Icon, name, onClick, variant = "outline" }) {
-
+export default function Button({ Icon, name, onClick, variant = "primary" }) {
   const { t } = useTranslation();
 
   const variants = {
-    outline:
-      "bg-transparent border border-[#00FFEA] hover:border-[#00FFFF] text-white",
     primary:
-      "bg-[#00FFEA] border border-[#00FFEA] text-black hover:bg-[#00FFFF]",
+      "bg-[#E7E3C9] text-[#0E3B2E] border border-[#E7E3C9] hover:bg-[#F2EFD7] shadow-lg shadow-black/20",
+
+    outline:
+      "bg-white/5 backdrop-blur-xl border border-white/15 text-[#E7E3C9] hover:bg-white/10",
   };
 
   const renderIcon = () => {
     if (!Icon) return null;
 
-    // Se for JSX (<Icon />)
-    if (typeof Icon === "object") {
-      return Icon;
-    }
+    if (typeof Icon === "object") return Icon;
 
-    // Se for componente (Icon)
-    if (typeof Icon === "function") {
-      return <Icon />;
-    }
+    if (typeof Icon === "function") return <Icon />;
 
     return null;
   };
@@ -33,14 +27,18 @@ export default function Button({ Icon, name, onClick, variant = "outline" }) {
         type="button"
         onClick={onClick}
         className={`
-          rounded-full font-[Poppins] h-8 w-full max-w-[36vh] gap-2
-          flex items-center justify-center cursor-pointer
-          transition-all duration-300 hover:scale-105 px-4
+          rounded-xl h-12 w-full max-w-[320px]
+          flex items-center justify-center gap-2
+          font-medium text-sm
+          transition-all duration-300
+          hover:scale-[1.03]
+          active:scale-[0.98]
+          px-6
           ${variants[variant]}
         `}
       >
         {renderIcon()}
-        <span className="text-sm font-medium">{t(name)}</span>
+        <span>{t(name)}</span>
       </button>
     </div>
   );

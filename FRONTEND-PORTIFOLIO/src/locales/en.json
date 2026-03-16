@@ -3,25 +3,26 @@
     "welcome": "Welcome",
     "subtitle": "Choose how you want to connect with me",
     "client": "I need a project",
-    "recruiter": "I'm a company / recruiter",
+    "recruiter": "I am a company / recruiter",
     "footer": "Developed by"
   },
 
   "dev": {
     "intro": {
-      "greeting": "Hi, I am:",
+      "greeting": "Hello, I am:",
       "name": "Ayran Vieira",
-      "description": "Full Stack Developer specialized in Java - Spring Boot and ReactJS. I build scalable APIs and efficient solutions on OCI (Oracle Cloud). Driven by turning ideas into robust, high-performance systems."
+      "description": "Full Stack Developer specialized in Java, Spring Boot and ReactJS, focused on solving complex problems through software. I work on building robust APIs, scalable systems and efficient solutions, transforming business challenges into reliable and high-performance applications."
     }
   },
 
   "client": {
     "hero": {
       "title": "Your professional website starts here",
-      "subtitle": "Modern, fast and built to generate results.",
+      "subtitle": "Modern, fast digital presence ready to sell.",
       "price": "Plans starting at $399",
       "socialProof": "Entrepreneurs are already modernizing their businesses."
     },
+
     "benefits": {
       "professional": {
         "title": "Professional presence",
@@ -36,6 +37,7 @@
         "text": "Fast, lightweight websites optimized for user experience."
       }
     },
+
     "cta": {
       "button": "Request a quote",
       "trust": "Fast response • Personalized service"
@@ -48,7 +50,7 @@
       "skills": [
         {
           "title": "Clear communication",
-          "description": "I convey technical ideas objectively to ensure team alignment."
+          "description": "I convey technical ideas objectively to help team alignment."
         },
         {
           "title": "Problem solving",
@@ -56,7 +58,7 @@
         },
         {
           "title": "Continuous learning",
-          "description": "Daily growth by studying technologies and best practices."
+          "description": "Daily improvement by studying technologies and best practices."
         },
         {
           "title": "Collaboration",
@@ -64,7 +66,7 @@
         },
         {
           "title": "Adaptability",
-          "description": "Flexibility to changes in scope and new tools."
+          "description": "Flexibility for scope changes and new tools."
         },
         {
           "title": "Proactivity",
@@ -75,6 +77,7 @@
           "description": "Organization using methods like Pomodoro and priority lists."
         }
       ],
+
       "buttons": {
         "linkedin": "LinkedIn",
         "profile": "Big Five"
@@ -83,6 +86,7 @@
 
     "hard": {
       "title": "Hard Skills",
+
       "skills": [
         {
           "title": "Java",
@@ -102,7 +106,7 @@
         },
         {
           "title": "OCI",
-          "description": "Services on Oracle Cloud Infrastructure."
+          "description": "Oracle Cloud Infrastructure services."
         },
         {
           "title": "React.js",
@@ -110,54 +114,49 @@
         },
         {
           "title": "JavaScript",
-          "description": "Foundation of the modern web."
+          "description": "The foundation of the modern web."
         },
         {
           "title": "CSS3",
-          "description": "Advanced styling for the web."
+          "description": "Advanced web styling."
         },
         {
           "title": "Axios",
           "description": "HTTP requests using Promises."
         }
       ],
+
       "buttons": {
         "github": "GitHub",
         "resume": "Resume"
       }
     }
   },
-    
+
   "projects": {
-    "items": [
-      {
-        "title": "Flight On Time",
-        "description": "MVP developed during a hackathon to predict flight delay probabilities, addressing unpredictability in air travel planning. The solution integrates Data Science for pattern analysis, Spring Boot on the back-end with a REST API, and React on the front-end for clear result visualization."
-      },
-      {
-        "title": "Sonatta Music Website",
-        "description": "Institutional website for Sonatta, a band focused on weddings and events. Built with React and Tailwind, focused on elegant design, responsiveness, and conversion, integrating a WhatsApp quote form."
-      },
-      {
-        "title": "Secret Number Game",
-        "description": "Game developed with pure HTML, CSS, and JavaScript, using the ResponsiveVoice API for voice narration. Fully responsive."
-      },
-      {
-        "title": "Technical Portfolio",
-        "description": "Project built with React.js, TailwindCSS, and Axios for sending forms to the back-end."
-      },
-      {
-      "justinaVirtual": {
-        "title": "Justina Virtual",
-        "description": "Medical virtual assistant built with React and integrated with a Java Spring Boot backend. The system supports user registration, secure authentication with JWT, and interaction with artificial intelligence to assist doctors with diagnostic support and clinical information.",
-        "deploy": "Deploy",
-        "code": "Code"
-      }
-      }
-    ],
-    "buttons": {
-      "deploy": "Live Demo",
-      "code": "Code"
+    "justina": {
+      "title": "Justina Virtual",
+      "description": "Medical virtual assistant developed with React and integrated with a Java Spring Boot backend."
+    },
+
+    "flightOnTime": {
+      "title": "Flight On Time",
+      "description": "MVP developed in a hackathon to predict flight delay probabilities."
+    },
+
+    "sonatta": {
+      "title": "Sonatta Music Website",
+      "description": "Institutional website for the Sonatta band."
+    },
+
+    "portfolio": {
+      "title": "Technical Portfolio",
+      "description": "Portfolio developed in React with Tailwind."
+    },
+
+    "secretNumber": {
+      "title": "Secret Number Game",
+      "description": "Game built with HTML, CSS and JavaScript using ResponsiveVoice."
     }
   }
 }
