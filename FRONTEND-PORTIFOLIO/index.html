@@ -2,35 +2,73 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/Logo_Ayran.png" />
+    <link rel="icon" type="image/png" href="/Logo_Ayran.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portifólio - Ayran Vieira - Desenvolvedor</title>
+
+    <!-- SEO básico -->
+    <title>Ayran Vieira | Soluções Digitais</title>
+    <meta name="description" content="Desenvolvedor Full Stack especializado em Java, Spring Boot e React. Criação de sistemas e soluções digitais modernas." />
+    
+        <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
+            },
+          },
+        },
+      }
+    </script>
+
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Configuração de fonte + base -->
     <style>
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+      body {
+        font-family: 'Inter', sans-serif ;
+        background-color: #0B0F0E;
+        color: #E5E7EB;
+      }
 
-  @keyframes fadeInDelay {
-    from { opacity: 0; transform: translateY(20px); }
-    50% { opacity: 0; }
-    to { opacity: 1; transform: translateY(0); }
-  }
+      .title-font {
+        font-family: 'Space Grotesk', sans-serif;
+        letter-spacing: -0.02em;
+      }
 
-  .animate-fadeIn {
-    animation: fadeIn 1s ease forwards;
-  }
+      /* Animações */
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
 
-  .animate-fadeInDelay {
-    animation: fadeInDelay 1.3s ease forwards;
-  }
-</style>
+      @keyframes fadeInDelay {
+        from { opacity: 0; transform: translateY(20px); }
+        50% { opacity: 0; }
+        to { opacity: 1; transform: translateY(0); }
+      }
 
+      .animate-fadeIn {
+        animation: fadeIn 1s ease forwards;
+      }
+
+      .animate-fadeInDelay {
+        animation: fadeInDelay 1.3s ease forwards;
+      }
+    </style>
   </head>
-  <body>
+
+  <body class="antialiased">
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

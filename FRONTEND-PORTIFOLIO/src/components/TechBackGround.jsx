@@ -1,13 +1,20 @@
 export default function TechBackground() {
   return (
     <>
-      <div className="absolute inset-0 bg-gradient-to-b from-[#061B15] via-[#0E3B2E] to-[#061B15]" />
+      {/* Base */}
+      <div className="absolute inset-0 bg-[#0B0F0E]" />
 
-      <div className="absolute w-[900px] h-[900px] bg-[#1C6B55]/20 blur-[220px] rounded-full -top-[300px] -left-[300px]" />
+      {/* Gradiente principal */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#02120E] via-[#06221B] to-[#0B0F0E]" />
 
-      <div className="absolute w-[700px] h-[700px] bg-[#E7E3C9]/10 blur-[220px] rounded-full -bottom-[300px] -right-[300px]" />
+      {/* Glow 1 */}
+      <div className="absolute w-[900px] h-[900px] bg-[#00D1A0]/20 blur-[180px] rounded-full -top-[250px] -left-[250px]" />
 
-      <div className="absolute inset-0 opacity-[0.04] bg-[linear-gradient(rgba(255,255,255,0.15)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.15)_1px,transparent_1px)] bg-[size:120px_120px]" />
+      {/* Glow 2 */}
+      <div className="absolute w-[700px] h-[700px] bg-[#0EA5E9]/20 blur-[180px] rounded-full -bottom-[250px] -right-[250px]" />
+
+      {/* Grid */}
+      <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:100px_100px]" />
     </>
   );
 }

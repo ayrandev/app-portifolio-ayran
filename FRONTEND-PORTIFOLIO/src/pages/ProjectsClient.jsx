@@ -1,27 +1,21 @@
 import projectsClient from "../components/projectsClient";
 import Button from "../components/Button";
-import TechBackground from "../components/TechBackGround";
 
 export default function ProjectsClient() {
   return (
-    <section
-      id="Projects"
-      className="relative py-24 px-6 overflow-hidden"
-    >
-
+    <section id="Projects" className="relative py-24 px-6 overflow-hidden">
 
       <div className="relative max-w-7xl mx-auto z-10">
 
         {/* Título */}
         <div className="mb-16 text-center">
 
-          <h2 className="text-4xl md:text-5xl font-bold text-[#E7E3C9]">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#E5E7EB]">
             Soluções que entregamos
           </h2>
 
-          <p className="text-[#DCD8B4]/70 mt-5 max-w-2xl mx-auto text-lg">
-            Projetos desenvolvidos para fortalecer sua presença digital
-            e gerar novas oportunidades para o seu negócio.
+          <p className="text-[#9CA3AF] mt-5 max-w-2xl mx-auto text-lg">
+            Projetos desenvolvidos para gerar resultados reais e fortalecer sua presença digital.
           </p>
 
         </div>
@@ -33,14 +27,10 @@ export default function ProjectsClient() {
             <div
               key={project.id}
               className="
-              bg-white/5
-              backdrop-blur-xl
-              border border-white/10
-              rounded-2xl
-              p-6
-              flex flex-col
-              shadow-xl
-              hover:border-[#1C6B55]
+              bg-white/5 backdrop-blur-xl border border-white/10
+              rounded-2xl p-6 flex flex-col shadow-xl
+              hover:border-[#00D1A0]
+              hover:shadow-[0_0_30px_rgba(0,209,160,0.2)]
               transition-all duration-300
               hover:-translate-y-1
               "
@@ -54,15 +44,15 @@ export default function ProjectsClient() {
 
               <div className="flex-1">
 
-                <h3 className="text-xl text-[#E7E3C9] font-semibold mb-3">
+                <h3 className="text-xl text-[#E5E7EB] font-semibold mb-3">
                   {project.title}
                 </h3>
 
-                <p className="text-[#DCD8B4]/70 text-sm mb-5">
+                <p className="text-[#9CA3AF] text-sm mb-5">
                   {project.description}
                 </p>
 
-                <ul className="text-[#DCD8B4]/80 text-sm space-y-2 mb-6">
+                <ul className="text-[#9CA3AF] text-sm space-y-2 mb-6">
                   {project.benefits.map((benefit, index) => (
                     <li key={index}>✔ {benefit}</li>
                   ))}
@@ -87,6 +77,7 @@ export default function ProjectsClient() {
         </div>
 
       </div>
+
     </section>
   );
 }
