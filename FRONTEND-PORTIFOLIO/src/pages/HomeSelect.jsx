@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import GifBackGround from "../components/GifBackGround";
+import GifBackGround from "../components/components_portifolio/GifBackGround";
 import { Briefcase, Building2 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "../components/LanguageSwitcher";

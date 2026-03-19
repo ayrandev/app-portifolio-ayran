@@ -1,8 +1,8 @@
-import Description from "./Description";
-import Header from "../components/Header"
-import PageAbout from "./PageAbout";
-import FormContact from "./FormContact";
-import PageProjects from "./PageProjects";
+import Description from "../components/components_portifolio/Description";
+import Header from "../components/components_portifolio/Header"
+import PageAbout from "../components/components_portifolio/PageAbout";
+import FormContact from "../components/components_portifolio/FormContact";
+import PageProjects from "../components/components_portifolio/PageProjects";
 import BackHomeButton from "../components/BackHomeButton";
 
 

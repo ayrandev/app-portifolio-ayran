@@ -1,9 +1,9 @@
 import { MdLaptopChromebook } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 
-import Portifolio from "../assets/Portifolio-tecnico.jpeg";
-import SonattaSite from "../assets/sonatta_site.jpeg";
-import FlightOnTime from "../assets/FlightOnTime.jpeg";
+import Portifolio from "../../assets/Portifolio-tecnico.jpeg";
+import SonattaSite from "../../assets/sonatta_site.jpeg";
+import FlightOnTime from "../../assets/FlightOnTime.jpeg";
 
 const projectsClient = [
   {
@@ -11,15 +11,12 @@ const projectsClient = [
     image: Portifolio,
     title: "Portfólio Pessoal",
 
-    // ❌ PROBLEMA
     description:
       "Profissional sem presença digital estruturada, com dificuldade em transmitir credibilidade e atrair clientes.",
 
-    // 🚀 SOLUÇÃO
     solution:
       "Criação de um portfólio moderno, responsivo e estratégico, focado em posicionamento profissional e geração de leads.",
 
-    // 📈 RESULTADO
     benefits: [
       "Mais autoridade no mercado",
       "Aumento de contatos qualificados",

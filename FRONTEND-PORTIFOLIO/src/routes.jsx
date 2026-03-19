@@ -2,8 +2,8 @@ import { Route } from "react-router-dom";
 import { createBrowserRouter, createRoutesFromElements } from "react-router-dom";
 
 import HomeSelect from "./pages/HomeSelect";
-import Page from "./pages/Page"; // DEV (empregabilidade)
-import ClientPage from "./pages/ClientPage"; // CLIENTE
+import Page from "./pages/Page";
+import ClientPage from "./pages/ClientPage";
 
 export default createBrowserRouter(
   createRoutesFromElements(

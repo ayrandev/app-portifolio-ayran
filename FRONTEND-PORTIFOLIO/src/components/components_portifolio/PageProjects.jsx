@@ -7,10 +7,10 @@ import "swiper/css/pagination";
 
 import { Navigation, Pagination } from "swiper/modules";
 
-import Gallery from "../components/Gallery";
-import Button from "../components/Button";
-import GifBackGround from "../components/GifBackGround";
-import projects from "../components/Projects";
+import Gallery from "./Gallery";
+import Button from "../Button";
+import GifBackGround from "./GifBackGround";
+import projects from "../Projects";
 
 export default function PageProjects() {
 
@@ -61,8 +61,6 @@ export default function PageProjects() {
           flex flex-col items-center
         "
       >
-        {/* GIF de fundo */}
-        <GifBackGround />
 
         {/* Título */}
         <div

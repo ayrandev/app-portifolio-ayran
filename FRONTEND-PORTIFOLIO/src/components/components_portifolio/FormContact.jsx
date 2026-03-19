@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import Button from "../components/Button";
-import SocialMedia from "../components/SocialMedia";
-import Footer from "../components/Footer";
-import GifBackGround from "../components/GifBackGround";
+import Button from "../Button";
+import SocialMedia from "./SocialMedia";
+import Footer from "./Footer";
+import GifBackGround from "./GifBackGround";
 import axios from "axios";
 
 export default function FormContact() {
@@ -84,7 +84,7 @@ export default function FormContact() {
         id="Contact"
         className="relative flex flex-col min-h-screen overflow-x-hidden bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950"
       >
-        <GifBackGround />
+  
 
         <div className="flex flex-col justify-center items-center w-full pt-6 pb-12 flex-grow">
           <div className="flex justify-center w-full max-w-6xl px-4">

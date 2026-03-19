@@ -1,5 +1,5 @@
 import React from "react";
-import Codebg from "../assets/codebg.png";
+import Codebg from "../../assets/Codebg.png";
 
 const GifBackGround = () => {
   return (

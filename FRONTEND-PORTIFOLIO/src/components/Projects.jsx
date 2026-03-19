@@ -2,7 +2,6 @@ import { FaGithub, FaBook } from "react-icons/fa";
 import { MdLaptopChromebook } from "react-icons/md";
 
 import SonattaSite from "../assets/sonatta_site.jpeg";
-import JogoDoNumeroSecreto from "../assets/jogo-do-numero-secreto.jpeg";
 import Portifolio from "../assets/Portifolio-tecnico.jpeg";
 import FlightOnTime from "../assets/FlightOnTime.jpeg";
 import JustinaVirtual from "../assets/JustinaVirtual.jpeg";

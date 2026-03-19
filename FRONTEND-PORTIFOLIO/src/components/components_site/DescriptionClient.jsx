@@ -1,7 +1,7 @@
-import Button from "./Button";
+import Button from "../Button";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.jpeg";
+import logo from "../../assets/logo.jpeg";
 import servicesClient from "./servicesClient";
 
 export default function DescriptionClient() {
@@ -42,7 +42,7 @@ export default function DescriptionClient() {
       <div className="relative grid md:grid-cols-2 gap-16 max-w-7xl items-center z-10">
 
         {/* TEXTO */}
-        <div className="space-y-8">
+        <div className="space-y-8 md:pt-2 pt-32">
 
           <h1 className="title-font text-5xl md:text-6xl font-bold text-[#E5E7EB]">
             {t("client.hero.title")}

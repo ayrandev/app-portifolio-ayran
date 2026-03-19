@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
-import ImagePerfil from "../components/ImagePerfil";
-import GifBackGround from "../components/GifBackGround";
+import ImagePerfil from "./ImagePerfil";
+import GifBackGround from "./GifBackGround";
 import { useTranslation } from "react-i18next";
 
 export default function Description() {
@@ -13,7 +13,6 @@ export default function Description() {
         id="Home"
         className="relative flex justify-center items-center min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 pt-28 sm:pt-32"
       >
-        <GifBackGround />
 
         <div className="flex flex-col-reverse sm:flex-row-reverse items-center sm:justify-center sm:gap-28 gap-12 w-full px-6">
           
