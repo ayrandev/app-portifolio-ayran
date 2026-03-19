@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import Button from "../Button";
-import GifBackGround from "./GifBackGround";
 
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 

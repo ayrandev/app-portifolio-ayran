@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Button from "../Button";
 import SocialMedia from "./SocialMedia";
 import Footer from "./Footer";
-import GifBackGround from "./GifBackGround";
 import axios from "axios";
 
 export default function FormContact() {

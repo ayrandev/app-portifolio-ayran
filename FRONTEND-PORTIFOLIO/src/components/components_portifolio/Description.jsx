@@ -1,7 +1,6 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import ImagePerfil from "./ImagePerfil";
-import GifBackGround from "./GifBackGround";
 import { useTranslation } from "react-i18next";
 
 export default function Description() {
