@@ -26,55 +26,47 @@ export default function CardsAbout() {
   const skills = [
     {
       title: "Resolução de Problemas",
-      description: "Entendimento profundo antes da solução.",
+      description: "Análise e solução eficiente de cenários complexos.",
     },
     {
       title: "Pensamento Estratégico",
-      description: "Código com foco em resultado.",
+      description: "Foco em impacto e resultado de negócio.",
     },
     {
       title: "Comunicação Clara",
-      description: "Tecnologia simples e direta.",
+      description: "Alinhamento simples entre técnico e negócio.",
     },
     {
       title: "Organização",
-      description: "Código limpo e escalável.",
+      description: "Código limpo, escalável e bem estruturado.",
     },
   ];
 
-  /* -------------------- HARD SKILLS -------------------- */
+  /* -------------------- HARD SKILLS (FOCO NO MERCADO) -------------------- */
   const techs = [
     {
       title: "Java",
-      description: "Back-end robusto e escalável.",
+      description: "Desenvolvimento back-end robusto e escalável.",
     },
     {
       title: "Spring Boot",
-      description: "APIs seguras e performáticas.",
+      description: "Criação de APIs REST seguras e performáticas.",
+    },
+    {
+      title: "APIs REST",
+      description: "Construção e integração de serviços distribuídos.",
     },
     {
       title: "React",
-      description: "Interfaces modernas e dinâmicas.",
+      description: "Interfaces modernas e reativas.",
     },
     {
-      title: "Tailwind",
-      description: "Estilização rápida e responsiva.",
+      title: "JavaScript",
+      description: "Base para aplicações web dinâmicas.",
     },
     {
       title: "PostgreSQL",
-      description: "Banco relacional confiável.",
-    },
-    {
-      title: "MySQL",
-      description: "Gerenciamento de dados eficiente.",
-    },
-    {
-      title: "Axios",
-      description: "Integração com APIs.",
-    },
-    {
-      title: "Oracle",
-      description: "Banco de dados corporativo.",
+      description: "Modelagem e persistência de dados confiável.",
     },
   ];
 
@@ -106,7 +98,7 @@ export default function CardsAbout() {
             </h2>
 
             <p className="text-[#9CA3AF] mt-4 max-w-2xl mx-auto">
-              Combinação de habilidades técnicas e estratégicas para gerar resultados reais.
+              Tecnologias e habilidades focadas em resolver problemas reais.
             </p>
           </div>
 
@@ -120,12 +112,7 @@ export default function CardsAbout() {
               {skills.map((item, index) => (
                 <div
                   key={index}
-                  className="
-                    reveal p-5 rounded-2xl
-                    bg-white/5 border border-white/10
-                    hover:border-[#00D1A0]
-                    transition duration-300
-                  "
+                  className="reveal p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[#00D1A0] transition duration-300"
                 >
                   <h4 className="text-[#E5E7EB] font-semibold mb-2">
                     {item.title}
@@ -139,22 +126,17 @@ export default function CardsAbout() {
             </div>
           </div>
 
-          {/* HARD SKILLS (MESMO PADRÃO) */}
+          {/* HARD SKILLS */}
           <div>
             <h3 className="text-2xl text-[#E5E7EB] mb-8 text-center reveal">
               Hard Skills
             </h3>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {techs.map((item, index) => (
                 <div
                   key={index}
-                  className="
-                    reveal p-5 rounded-2xl
-                    bg-white/5 border border-white/10
-                    hover:border-[#00D1A0]
-                    transition duration-300
-                  "
+                  className="reveal p-5 rounded-2xl bg-white/5 border border-white/10 hover:border-[#00D1A0] transition duration-300"
                 >
                   <h4 className="text-[#E5E7EB] font-semibold mb-2">
                     {item.title}

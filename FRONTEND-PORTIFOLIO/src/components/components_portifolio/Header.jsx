@@ -1,34 +1,20 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
-
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="border-[#00FFEA] fixed w-screen justify-center items-center flex bg-transparent z-50">
-      <div className="flex justify-between sm:justify-center items-center py-2 px-4 sm:px-10 w-full">
-        {/* Botão do menu smartphones */}
-        <button
-          className="sm:hidden text-[#00FFEA]"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
-          {menuOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+    <header className="hidden md:flex fixed w-screen justify-center items-center bg-transparent z-50">
+      <div className="flex justify-center items-center py-2 px-10 w-full">
 
         <nav>
-          <ul
-            className={`${
-              menuOpen ? "flex" : "hidden"
-            } sm:flex flex-col sm:flex-row absolute sm:static top-12 left-0 w-full bg-[#000F0C] sm:bg-transparent gap-4 sm:gap-10 p-4 sm:p-0`}
-          >
+          <ul className="flex flex-row gap-10">
             {["Home", "About-me", "Projects", "Contact"].map((item) => (
               <li key={item} className="font-[Poppins] hover:scale-110">
                 <Link
                   onClick={(e) => {
                     e.preventDefault();
-                    setMenuOpen(false);
                     window.scrollTo({
                       top: document.querySelector(`#${item}`).offsetTop,
                       behavior: "smooth",
@@ -42,6 +28,7 @@ export default function Header() {
             ))}
           </ul>
         </nav>
+
       </div>
     </header>
   );

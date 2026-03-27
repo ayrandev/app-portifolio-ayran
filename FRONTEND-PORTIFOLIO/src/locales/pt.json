@@ -41,6 +41,110 @@
     "cta": {
       "button": "Solicitar orçamento",
       "trust": "Resposta rápida • Atendimento personalizado"
+    },
+
+    "about": {
+      "title": "Sobre a AV Soluções Digitais",
+      "description1": "Desenvolvemos soluções digitais modernas para empresas que desejam crescer, atrair clientes e se destacar no ambiente online.",
+      "description2": "Criamos sites, sistemas e experiências digitais com foco em performance, design e resultado real para o seu negócio.",
+      "footer": "Tecnologia aplicada com foco em crescimento.",
+
+      "pillars": {
+        "technology": {
+          "title": "Tecnologia",
+          "description": "Soluções modernas com alta performance e escalabilidade."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Interfaces elegantes focadas em experiência e conversão."
+        },
+        "strategy": {
+          "title": "Estratégia",
+          "description": "Decisões pensadas para gerar resultados reais."
+        }
+      }
+    },
+
+    "services": {
+      "title": "Soluções digitais",
+
+      "items": {
+        "institutional": {
+          "title": "Sites Institucionais",
+          "description": "Presença digital profissional para sua empresa gerar autoridade."
+        },
+        "ecommerce": {
+          "title": "E-commerce",
+          "description": "Venda seus produtos online com performance e segurança."
+        },
+        "landing": {
+          "title": "Landing Pages",
+          "description": "Páginas focadas em conversão para campanhas e anúncios."
+        },
+        "portfolio": {
+          "title": "Portfólios",
+          "description": "Mostre seu trabalho de forma profissional e atrativa."
+        },
+        "bots": {
+          "title": "Bots WhatsApp & Telegram",
+          "description": "Automatize atendimento e aumente suas vendas."
+        },
+        "systems": {
+          "title": "Sistemas Personalizados",
+          "description": "Desenvolvimento de sistemas sob medida para automatizar processos e escalar seu negócio."
+        }
+      }
+    },
+
+    "projects": {
+      "title": "Soluções que entregamos",
+      "subtitle": "Projetos desenvolvidos para gerar resultados reais e fortalecer sua presença digital.",
+
+      "items": {
+        "portfolio": {
+          "title": "Portfólio Profissional",
+          "problem": "Profissionais com dificuldade em se destacar no mercado por não possuírem uma presença digital estruturada e convincente.",
+          "solution": "Desenvolvimento de um portfólio moderno, responsivo e estratégico, pensado para destacar habilidades, projetos e gerar oportunidades profissionais.",
+          "benefits": [
+            "Maior destaque no mercado",
+            "Aumento de oportunidades e contatos",
+            "Apresentação clara e profissional das habilidades"
+          ],
+          "buttons": {
+            "visit": "Visitar site",
+            "request": "Solicitar projeto"
+          }
+        },
+
+       "sonatta": {
+        "title": "Site Profissional (Sonatta)",
+        "problem": "Banda de eventos com dificuldade em apresentar seu trabalho de forma profissional e transmitir confiança para fechar contratos.",
+        "solution": "Desenvolvimento de um site institucional moderno para o grupo Sonatta, destacando experiência e facilitando o contato direto com clientes.",
+        "benefits": [
+          "Maior credibilidade para fechar contratos",
+          "Apresentação profissional para eventos",
+          "Facilidade de contato com clientes interessados"
+        ],
+        "buttons": {
+          "visit": "Visitar site",
+          "request": "Solicitar projeto"
+        }
+      },
+        "system": {
+          "title": "Sistema Web (Flight On Time)",
+          "problem": "Passageiros enfrentam incertezas e falta de informação sobre possíveis atrasos em seus voos.",
+          "solution": "Aplicação desenvolvida com o intuito de ajudar passageiros a prever possíveis atrasos em seus voos, oferecendo mais previsibilidade e segurança no planejamento de viagens.",
+          "benefits": [
+            "Maior previsibilidade de viagens",
+            "Redução de incertezas para passageiros",
+            "Melhor planejamento de horários"
+          ],
+          "buttons": {
+            "visit": "Ver sistema",
+            "request": "Solicitar sistema"
+          }
+        }
+      }
     }
   },
 
@@ -86,7 +190,6 @@
 
     "hard": {
       "title": "Hard Skills",
-
       "skills": [
         {
           "title": "Java",
@@ -134,30 +237,21 @@
   },
 
   "projects": {
-
-  "justina": {
-    "title": "Justina Virtual",
-    "description": "Assistente virtual médica desenvolvida com React e integração com backend em Java Spring Boot."
-  },
-
-  "flightOnTime": {
-    "title": "Flight On Time",
-    "description": "MVP desenvolvido em hackathon para prever probabilidades de atraso de voos."
-  },
-
-  "sonatta": {
-    "title": "Site Sonatta Music",
-    "description": "Site institucional da banda Sonatta."
-  },
-
-  "portfolio": {
-    "title": "Portfólio Técnico",
-    "description": "Portfólio desenvolvido em React com Tailwind."
-  },
-
-  "secretNumber": {
-    "title": "Jogo do Número Secreto",
-    "description": "Jogo em HTML, CSS e JavaScript com ResponsiveVoice."
+    "justina": {
+      "title": "Justina Virtual",
+      "description": "Assistente virtual médica desenvolvida com React e integração com backend em Java Spring Boot."
+    },
+    "flightOnTime": {
+      "title": "Flight On Time",
+      "description": "MVP desenvolvido em hackathon para prever probabilidades de atraso de voos."
+    },
+    "sonatta": {
+      "title": "Site Sonatta Music",
+      "description": "Site institucional da banda Sonatta."
+    },
+    "portfolio": {
+      "title": "Portfólio Técnico",
+      "description": "Portfólio desenvolvido em React com Tailwind."
+    }
   }
-}
 }

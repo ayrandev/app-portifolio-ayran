@@ -1,5 +1,3 @@
-// servicesClient.js
-
 const servicesClient = [
   {
     id: 1,
