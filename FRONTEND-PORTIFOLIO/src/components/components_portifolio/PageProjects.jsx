@@ -9,7 +9,6 @@ import { Navigation, Pagination } from "swiper/modules";
 
 import Gallery from "./Gallery";
 import Button from "../Button";
-import GifBackGround from "./GifBackGround";
 import projects from "../Projects";
 
 export default function PageProjects() {
@@ -56,7 +55,6 @@ export default function PageProjects() {
         id="Projects"
         className="
           relative min-h-screen overflow-x-hidden
-          bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950
           px-4 py-20 sm:py-24 lg:py-6
           flex flex-col items-center
         "

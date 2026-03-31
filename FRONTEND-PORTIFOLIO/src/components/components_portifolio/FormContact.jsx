@@ -81,7 +81,7 @@ export default function FormContact() {
 
       <section
         id="Contact"
-        className="relative flex flex-col min-h-screen overflow-x-hidden bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950"
+        className="relative flex flex-col min-h-screen overflow-x-hidden"
       >
   
 

@@ -3,23 +3,23 @@
     "welcome": "Welcome",
     "subtitle": "Choose how you want to connect with me",
     "client": "I need a project",
-    "recruiter": "I am a company / recruiter",
+    "recruiter": "I'm a company / recruiter",
     "footer": "Developed by"
   },
 
   "dev": {
     "intro": {
-      "greeting": "Hello, I am:",
+      "greeting": "Hi, I'm:",
       "name": "Ayran Vieira",
-      "description": "Full Stack Developer specialized in Java, Spring Boot and ReactJS, focused on solving complex problems through software. I work on building robust APIs, scalable systems and efficient solutions, transforming business challenges into reliable and high-performance applications."
+      "description": "Full Stack Developer specialized in Java, Spring Boot and ReactJS, focused on solving complex problems through software. I build robust APIs, scalable systems and efficient solutions, turning business challenges into reliable, high-performance applications."
     }
   },
 
   "client": {
     "hero": {
       "title": "Your professional website starts here",
-      "subtitle": "Modern, fast digital presence ready to sell.",
-      "price": "Plans starting at $399",
+      "subtitle": "Modern, fast and conversion-focused digital presence.",
+      "price": "Plans starting at $79",
       "socialProof": "Entrepreneurs are already modernizing their businesses."
     },
 
@@ -30,17 +30,122 @@
       },
       "responsive": {
         "title": "Fully responsive",
-        "text": "Perfect experience on mobile phones, tablets and desktops."
+        "text": "Perfect experience across mobile, tablet and desktop."
       },
       "performance": {
         "title": "High performance",
-        "text": "Fast, lightweight websites optimized for user experience."
+        "text": "Fast, lightweight and optimized websites for the best user experience."
       }
     },
 
     "cta": {
       "button": "Request a quote",
       "trust": "Fast response • Personalized service"
+    },
+
+    "about": {
+      "title": "About AV Digital Solutions",
+      "description1": "We develop modern digital solutions for businesses that want to grow, attract customers and stand out online.",
+      "description2": "We create websites, systems and digital experiences focused on performance, design and real results for your business.",
+      "footer": "Technology applied with a focus on growth.",
+
+      "pillars": {
+        "technology": {
+          "title": "Technology",
+          "description": "Modern solutions with high performance and scalability."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Elegant interfaces focused on user experience and conversion."
+        },
+        "strategy": {
+          "title": "Strategy",
+          "description": "Decisions designed to generate real results."
+        }
+      }
+    },
+
+    "services": {
+      "title": "Digital solutions",
+
+      "items": {
+        "institutional": {
+          "title": "Business Websites",
+          "description": "Professional digital presence to build authority for your company."
+        },
+        "ecommerce": {
+          "title": "E-commerce",
+          "description": "Sell your products online with performance and security."
+        },
+        "landing": {
+          "title": "Landing Pages",
+          "description": "High-conversion pages for campaigns and ads."
+        },
+        "portfolio": {
+          "title": "Portfolios",
+          "description": "Showcase your work in a professional and attractive way."
+        },
+        "bots": {
+          "title": "WhatsApp & Telegram Bots",
+          "description": "Automate customer service and increase your sales."
+        },
+        "systems": {
+          "title": "Custom Systems",
+          "description": "Custom-built systems to automate processes and scale your business."
+        }
+      }
+    },
+
+    "projects": {
+      "title": "Solutions we deliver",
+      "subtitle": "Projects designed to generate real results and strengthen your digital presence.",
+
+      "items": {
+        "portfolio": {
+          "title": "Professional Portfolio",
+          "problem": "Professionals struggle to stand out due to the lack of a structured and convincing digital presence.",
+          "solution": "Development of a modern, responsive and strategic portfolio designed to showcase skills, projects and generate professional opportunities.",
+          "benefits": [
+            "Stronger market positioning",
+            "More opportunities and qualified leads",
+            "Clear and professional presentation of skills"
+          ],
+          "buttons": {
+            "visit": "Visit website",
+            "request": "Request project"
+          }
+        },
+
+        "sonatta": {
+          "title": "Professional Website (Sonatta)",
+          "problem": "Event band struggling to present their work professionally and build trust to close deals.",
+          "solution": "Development of a modern institutional website for the Sonatta band, highlighting experience and making it easier for clients to get in touch.",
+          "benefits": [
+            "Increased credibility to close deals",
+            "Professional presentation for events",
+            "Easier contact with potential clients"
+          ],
+          "buttons": {
+            "visit": "Visit website",
+            "request": "Request project"
+          }
+        },
+
+        "system": {
+          "title": "Web System (Flight On Time)",
+          "problem": "Passengers face uncertainty and lack of information about possible flight delays.",
+          "solution": "Application designed to help passengers predict possible flight delays, providing more predictability and better travel planning.",
+          "benefits": [
+            "Better travel predictability",
+            "Reduced uncertainty for passengers",
+            "Improved schedule planning"
+          ],
+          "buttons": {
+            "visit": "View system",
+            "request": "Request system"
+          }
+        }
+      }
     }
   },
 
@@ -49,32 +154,32 @@
       "title": "Soft Skills",
       "skills": [
         {
-          "title": "Clear communication",
-          "description": "I convey technical ideas objectively to help team alignment."
+          "title": "Clear Communication",
+          "description": "I communicate technical ideas clearly to align teams effectively."
         },
         {
-          "title": "Problem solving",
+          "title": "Problem Solving",
           "description": "I analyze scenarios, identify root causes and implement efficient solutions."
         },
         {
-          "title": "Continuous learning",
-          "description": "Daily improvement by studying technologies and best practices."
+          "title": "Continuous Learning",
+          "description": "Constant growth through studying new technologies and best practices."
         },
         {
           "title": "Collaboration",
-          "description": "Experience in full stack projects with multidisciplinary teams."
+          "description": "Experience working on full stack projects with multidisciplinary teams."
         },
         {
           "title": "Adaptability",
-          "description": "Flexibility for scope changes and new tools."
+          "description": "Flexible with scope changes and new tools."
         },
         {
           "title": "Proactivity",
           "description": "Anticipating needs and continuously improving."
         },
         {
-          "title": "Time management",
-          "description": "Organization using methods like Pomodoro and priority lists."
+          "title": "Time Management",
+          "description": "Organized using methods like Pomodoro and priority lists."
         }
       ],
 
@@ -86,7 +191,6 @@
 
     "hard": {
       "title": "Hard Skills",
-
       "skills": [
         {
           "title": "Java",
@@ -114,7 +218,7 @@
         },
         {
           "title": "JavaScript",
-          "description": "The foundation of the modern web."
+          "description": "Foundation of modern web development."
         },
         {
           "title": "CSS3",
@@ -122,7 +226,7 @@
         },
         {
           "title": "Axios",
-          "description": "HTTP requests using Promises."
+          "description": "HTTP requests with Promises."
         }
       ],
 
@@ -136,27 +240,19 @@
   "projects": {
     "justina": {
       "title": "Justina Virtual",
-      "description": "Medical virtual assistant developed with React and integrated with a Java Spring Boot backend."
+      "description": "Medical virtual assistant built with React and integrated with a Java Spring Boot backend."
     },
-
     "flightOnTime": {
       "title": "Flight On Time",
       "description": "MVP developed in a hackathon to predict flight delay probabilities."
     },
-
     "sonatta": {
       "title": "Sonatta Music Website",
       "description": "Institutional website for the Sonatta band."
     },
-
     "portfolio": {
       "title": "Technical Portfolio",
-      "description": "Portfolio developed in React with Tailwind."
-    },
-
-    "secretNumber": {
-      "title": "Secret Number Game",
-      "description": "Game built with HTML, CSS and JavaScript using ResponsiveVoice."
+      "description": "Portfolio built with React and Tailwind."
     }
   }
 }

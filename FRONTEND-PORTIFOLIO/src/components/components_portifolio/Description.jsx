@@ -10,8 +10,7 @@ export default function Description() {
     <>
       <section
         id="Home"
-        className="relative flex justify-center items-center min-h-screen bg-gradient-to-b from-zinc-950 via-[#000F0C] to-zinc-950 pt-28 sm:pt-32"
-      >
+        className="relative flex justify-center items-center min-h-screen pt-28 sm:pt-32">
 
         <div className="flex flex-col-reverse sm:flex-row-reverse items-center sm:justify-center sm:gap-28 gap-12 w-full px-6">
           

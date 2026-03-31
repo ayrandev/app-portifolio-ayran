@@ -6,7 +6,7 @@ export default function Gallery({ image, Icon, title, description, Buttons, clas
 
   return (
     <div
-      className={`relative flex flex-col rounded-lg shadow-lg bg-zinc-800 overflow-hidden ${className}
+      className={`relative flex flex-col rounded-lg shadow-lg overflow-hidden ${className}
       w-full h-[380px] sm:h-[420px] md:h-[460px] lg:h-[500px]`}
     >
       {/* Imagem de fundo */}
