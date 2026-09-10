@@ -1,21 +1,25 @@
-import DescriptionClient from "../components/components_site/DescriptionClient";
-import BackHomeButton from "../components/BackHomeButton";
-import About from "../components/components_site/About";
-import TechBackGround from "../components/components_site/TechBackGround";
-import ProjectsClient from "../components/components_site/ProjectsClient.jsx";
-
+import Hero from "../features/client-site/Hero";
+import BackHomeButton from "../components/ui/BackHomeButton";
+import About from "../features/client-site/About";
+import TechBackground from "../components/ui/TechBackground";
+import Offers from "../features/client-site/Offers";
+import Projects from "../features/client-site/Projects";
+import ThemeToggle from "../theme/ThemeToggle";
 
 export default function ClientPage() {
   return (
-    <div className="relative min-h-screen bg-[#061B15] overflow-hidden">
+    <div className="relative min-h-screen bg-canvas overflow-hidden">
 
-   <div>
-      <TechBackGround />
+      <TechBackground />
       <BackHomeButton />
-      <DescriptionClient />
-      <ProjectsClient />
-      <About />
-    </div>
+      <ThemeToggle className="fixed z-40 top-6 right-20" />
+
+      <div>
+        <Hero />
+        <Offers />
+        <Projects />
+        <About />
+      </div>
 
     </div>
   );

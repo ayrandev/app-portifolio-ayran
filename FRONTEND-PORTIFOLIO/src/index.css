@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/* Dark mode via .dark class on <html>, controlled by ThemeProvider */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  /* Light theme (default) */
+  --color-canvas: #F6F8F7;
+  --color-surface: #FFFFFF;
+  --color-ink: #0B0F0E;
+  --color-subtle: #5B6461;
+  --color-line: #E1E5E3;
+  --color-accent: #048F6E;
+  --color-accent-2: #0891B2;
+}
+
+.dark {
+  --color-canvas: #0A0E0D;
+  --color-surface: #101613;
+  --color-ink: #E5E7EB;
+  --color-subtle: #9CA3AF;
+  --color-line: rgba(255, 255, 255, 0.1);
+  --color-accent: #00D1A0;
+  --color-accent-2: #22D3EE;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+html.dark {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-canvas text-ink antialiased;
+  font-family: var(--font-sans);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+/* Scroll-reveal animation shared by useScrollReveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition-delay: var(--delay, 0s);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
