@@ -1,0 +1,378 @@
+{
+  "home": {
+    "welcome": "Bem-vindo",
+    "subtitle": "Escolha como você quer se conectar comigo",
+    "client": "Preciso de um projeto",
+    "recruiter": "Sou empresa / recrutador",
+    "footer": "Desenvolvido por"
+  },
+
+  "dev": {
+    "nav": {
+      "home": "Início",
+      "about": "Sobre",
+      "experience": "Experiência",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "intro": {
+      "greeting": "Olá, eu sou:",
+      "name": "Ayran Vieira",
+      "description": "Desenvolvedor Full Stack com experiência prática em React, TypeScript, Java e Spring Boot, construindo interfaces modernas e APIs robustas em ambiente de produção. Gosto de transformar problemas de negócio complexos em soluções escaláveis e bem estruturadas, unindo atenção a detalhes técnicos com foco em resultado real para o usuário e para o negócio.",
+      "roles": [
+        "Full Stack Developer",
+        "React · TypeScript · Spring Boot",
+        "Soluções escaláveis para negócios reais"
+      ]
+    },
+    "experience": {
+      "title": "Experiência",
+      "items": [
+        {
+          "role": "Desenvolvedor Full Stack",
+          "company": "ABMTI — Tecnologia da Informação",
+          "period": "Mai 2026 – Atual",
+          "bullets": [
+            "Desenvolvimento full stack de módulos web com React, TypeScript e Spring Boot",
+            "Implementação de filtros, quadro Kanban e diálogos de interação com o usuário",
+            "Suporte técnico direto aos usuários, com triagem e resolução de incidentes"
+          ]
+        },
+        {
+          "role": "Desenvolvedor Web Freelancer",
+          "company": "Autônomo",
+          "period": "2024 – Atual",
+          "bullets": [
+            "Criação de landing pages e portfólios com React.js e Tailwind CSS",
+            "Integração de APIs REST e bancos de dados MySQL",
+            "Desenvolvimento de interfaces responsivas com foco em usabilidade"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Entre em Contato",
+      "name": "Nome completo*",
+      "namePlaceholder": "Digite seu nome",
+      "email": "Email*",
+      "emailPlaceholder": "Digite seu email",
+      "phone": "Whatsapp*",
+      "phonePlaceholder": "Digite seu whatsapp",
+      "message": "Qual motivo do seu contato?*",
+      "messagePlaceholder": "Digite sua mensagem",
+      "submit": "Enviar",
+      "success": "Formulário enviado com sucesso!",
+      "error": "Erro ao enviar o formulário!",
+      "connectionError": "Erro de conexão!"
+    }
+  },
+
+  "client": {
+    "hero": {
+      "brandName": "Ayran Vieira",
+      "brandTag": "Soluções Digitais",
+      "title": "Sites, portfólios e sistemas sob medida",
+      "subtitle": "Presença digital moderna e sistemas que organizam sua operação — feitos sob medida para o momento do seu negócio.",
+      "price": "Planos a partir de R$ 399",
+      "socialProof": "Empreendedores já estão modernizando seus negócios.",
+      "whatsappMessage": "Olá! Gostaria de solicitar um orçamento para um site."
+    },
+
+    "offers": {
+      "title": "Como posso te ajudar",
+      "subtitle": "Três frentes de trabalho. Escolha a que mais se encaixa no seu momento agora.",
+      "items": {
+        "sites": {
+          "title": "Sites & Landing Pages",
+          "pitch": "Pra quem precisa de presença online rápida, profissional e pronta pra converter visita em cliente.",
+          "tags": ["Responsivo", "SEO", "Integração WhatsApp"],
+          "cta": "Quero um site",
+          "whatsappMessage": "Olá! Tenho interesse em um site ou landing page para o meu negócio."
+        },
+        "portfolios": {
+          "title": "Portfólios Profissionais",
+          "pitch": "Pra quem quer se destacar em processos seletivos ou atrair clientes mostrando o próprio trabalho.",
+          "tags": ["Design autoral", "Multilíngue", "Pronto pra compartilhar"],
+          "cta": "Quero um portfólio",
+          "whatsappMessage": "Olá! Tenho interesse em um portfólio profissional."
+        },
+        "systems": {
+          "title": "Sistemas de Gestão",
+          "pitch": "Pra quem já cresceu da planilha e precisa de um painel próprio pra organizar a operação.",
+          "tags": ["Painel sob medida", "Automação", "Acesso multiplataforma"],
+          "cta": "Quero um sistema",
+          "whatsappMessage": "Olá! Tenho interesse em um sistema de gestão para o meu negócio."
+        }
+      }
+    },
+
+    "benefits": {
+      "professional": {
+        "title": "Presença profissional",
+        "text": "Design estratégico que fortalece sua marca e gera confiança imediata."
+      },
+      "responsive": {
+        "title": "Responsividade total",
+        "text": "Experiência perfeita em celulares, tablets e desktops."
+      },
+      "performance": {
+        "title": "Alta performance",
+        "text": "Sites rápidos, leves e otimizados para experiência do usuário."
+      }
+    },
+
+    "cta": {
+      "button": "Solicitar orçamento",
+      "trust": "Resposta rápida • Atendimento personalizado"
+    },
+
+    "about": {
+      "title": "Sobre a AV Soluções Digitais",
+      "description1": "Desenvolvemos soluções digitais modernas para empresas que desejam crescer, atrair clientes e se destacar no ambiente online.",
+      "description2": "Criamos sites, sistemas e experiências digitais com foco em performance, design e resultado real para o seu negócio.",
+      "footer": "Tecnologia aplicada com foco em crescimento.",
+
+      "pillars": {
+        "technology": {
+          "title": "Tecnologia",
+          "description": "Soluções modernas com alta performance e escalabilidade."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Interfaces elegantes focadas em experiência e conversão."
+        },
+        "strategy": {
+          "title": "Estratégia",
+          "description": "Decisões pensadas para gerar resultados reais."
+        }
+      }
+    },
+
+    "services": {
+      "title": "Soluções digitais",
+
+      "items": {
+        "institutional": {
+          "title": "Sites Institucionais",
+          "description": "Presença digital profissional para sua empresa gerar autoridade."
+        },
+        "ecommerce": {
+          "title": "E-commerce",
+          "description": "Venda seus produtos online com performance e segurança."
+        },
+        "landing": {
+          "title": "Landing Pages",
+          "description": "Páginas focadas em conversão para campanhas e anúncios."
+        },
+        "portfolio": {
+          "title": "Portfólios",
+          "description": "Mostre seu trabalho de forma profissional e atrativa."
+        },
+        "bots": {
+          "title": "Bots WhatsApp & Telegram",
+          "description": "Automatize atendimento e aumente suas vendas."
+        },
+        "systems": {
+          "title": "Sistemas Personalizados",
+          "description": "Desenvolvimento de sistemas sob medida para automatizar processos e escalar seu negócio."
+        }
+      }
+    },
+
+    "projects": {
+      "title": "Na prática",
+      "subtitle": "Alguns projetos reais que já coloquei no ar — a prova de que essas soluções funcionam.",
+
+      "items": {
+        "portfolio": {
+          "title": "Portfólio Profissional",
+          "problem": "Profissionais com dificuldade em se destacar no mercado por não possuírem uma presença digital estruturada e convincente.",
+          "solution": "Desenvolvimento de um portfólio moderno, responsivo e estratégico, pensado para destacar habilidades, projetos e gerar oportunidades profissionais.",
+          "benefits": [
+            "Maior destaque no mercado",
+            "Aumento de oportunidades e contatos",
+            "Apresentação clara e profissional das habilidades"
+          ],
+          "whatsappMessage": "Olá! Gostaria de criar um portfólio profissional.",
+          "buttons": {
+            "visit": "Visitar site",
+            "request": "Solicitar projeto"
+          }
+        },
+
+        "sonatta": {
+          "title": "Site Profissional (Sonatta)",
+          "problem": "Banda de eventos com dificuldade em apresentar seu trabalho de forma profissional e transmitir confiança para fechar contratos.",
+          "solution": "Desenvolvimento de um site institucional moderno para o grupo Sonatta, destacando experiência e facilitando o contato direto com clientes.",
+          "benefits": [
+            "Maior credibilidade para fechar contratos",
+            "Apresentação profissional para eventos",
+            "Facilidade de contato com clientes interessados"
+          ],
+          "whatsappMessage": "Olá! Gostaria de um site profissional para meu negócio.",
+          "buttons": {
+            "visit": "Visitar site",
+            "request": "Solicitar projeto"
+          }
+        },
+        "system": {
+          "title": "Sistema Web (Flight On Time)",
+          "problem": "Passageiros enfrentam incertezas e falta de informação sobre possíveis atrasos em seus voos.",
+          "solution": "Aplicação desenvolvida com o intuito de ajudar passageiros a prever possíveis atrasos em seus voos, oferecendo mais previsibilidade e segurança no planejamento de viagens.",
+          "benefits": [
+            "Maior previsibilidade de viagens",
+            "Redução de incertezas para passageiros",
+            "Melhor planejamento de horários"
+          ],
+          "whatsappMessage": "Olá! Gostaria de um sistema personalizado.",
+          "buttons": {
+            "visit": "Ver sistema",
+            "request": "Solicitar sistema"
+          }
+        },
+        "emily": {
+          "title": "Convite Digital & Painel de Confirmação",
+          "problem": "Organizar confirmações de presença de um evento por WhatsApp e planilha vira bagunça rápido.",
+          "solution": "Site de convite personalizado com confirmação de presença online e um painel em tempo real para o organizador acompanhar tudo, feito com React e Supabase.",
+          "benefits": [
+            "Confirmação de presença sem fricção para os convidados",
+            "Painel com estatísticas de adultos, crianças e presentes",
+            "Exportação da lista de convidados em um clique"
+          ],
+          "whatsappMessage": "Olá! Tenho interesse em um convite digital com confirmação de presença para o meu evento.",
+          "buttons": {
+            "visit": "Ver convite",
+            "request": "Solicitar o meu"
+          }
+        }
+      }
+    }
+  },
+
+  "about": {
+    "title": "Habilidades",
+    "subtitle": "Tecnologias e habilidades focadas em resolver problemas reais.",
+    "soft": {
+      "title": "Soft Skills",
+      "skills": [
+        {
+          "title": "Comunicação clara",
+          "description": "Transmito ideias técnicas com objetividade para facilitar o alinhamento da equipe."
+        },
+        {
+          "title": "Resolução de Problemas",
+          "description": "Analiso cenários, encontro causas e implemento soluções eficientes."
+        },
+        {
+          "title": "Aprendizado contínuo",
+          "description": "Evolução diária estudando tecnologias e boas práticas."
+        },
+        {
+          "title": "Colaboração",
+          "description": "Experiência em projetos full stack com equipes multidisciplinares."
+        },
+        {
+          "title": "Adaptabilidade",
+          "description": "Flexibilidade para mudanças de escopo e novas ferramentas."
+        },
+        {
+          "title": "Proatividade",
+          "description": "Antecipação de necessidades e melhoria constante."
+        },
+        {
+          "title": "Gestão de Tempo",
+          "description": "Organização com métodos como Pomodoro e listas de prioridade."
+        }
+      ],
+
+      "buttons": {
+        "linkedin": "LinkedIn",
+        "profile": "Big Five"
+      }
+    },
+
+    "hard": {
+      "title": "Hard Skills",
+      "skills": [
+        {
+          "title": "React.js",
+          "description": "Interfaces modernas e reativas com React.js e TypeScript."
+        },
+        {
+          "title": "TypeScript",
+          "description": "Tipagem estática para aplicações mais seguras e fáceis de manter."
+        },
+        {
+          "title": "Java & Spring Boot",
+          "description": "APIs REST seguras, robustas e escaláveis."
+        },
+        {
+          "title": "Spring Security",
+          "description": "Autenticação e autorização em APIs corporativas."
+        },
+        {
+          "title": "TanStack Query & Router",
+          "description": "Gerenciamento de estado assíncrono e roteamento em aplicações React."
+        },
+        {
+          "title": "Tailwind CSS",
+          "description": "Design systems ágeis, responsivos e consistentes."
+        },
+        {
+          "title": "Node.js & Express",
+          "description": "APIs e serviços back-end em JavaScript."
+        },
+        {
+          "title": "PostgreSQL & MySQL",
+          "description": "Modelagem e persistência de dados relacionais."
+        },
+        {
+          "title": "Docker",
+          "description": "Containerização de aplicações para ambientes consistentes."
+        },
+        {
+          "title": "Git & GitHub",
+          "description": "Versionamento e colaboração em equipes de desenvolvimento."
+        },
+        {
+          "title": "Scrum & CI/CD",
+          "description": "Entregas contínuas e organização ágil de projetos."
+        }
+      ],
+
+      "buttons": {
+        "github": "GitHub",
+        "resume": "Currículo"
+      }
+    }
+  },
+
+  "projects": {
+    "justina": {
+      "title": "Justina Virtual",
+      "description": "Assistente virtual médica desenvolvida com React e integração com backend em Java Spring Boot."
+    },
+    "flightOnTime": {
+      "title": "Flight On Time",
+      "description": "MVP desenvolvido em hackathon para prever probabilidades de atraso de voos."
+    },
+    "sonatta": {
+      "title": "Site Sonatta Music",
+      "description": "Site institucional da banda Sonatta."
+    },
+    "portfolio": {
+      "title": "Portfólio Técnico",
+      "description": "Portfólio desenvolvido em React com Tailwind."
+    },
+    "emily": {
+      "title": "Convite Digital & Painel de Confirmação",
+      "description": "Site de convite personalizado com confirmação de presença em tempo real e painel administrativo (React + Supabase) para gerenciar convidados e presentes."
+    },
+    "buttons": {
+      "application": "Aplicação",
+      "code": "Código",
+      "docs": "Docs",
+      "panel": "Painel Admin"
+    }
+  }
+}

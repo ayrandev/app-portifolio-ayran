@@ -1,0 +1,379 @@
+{
+  "home": {
+    "welcome": "Welcome",
+    "subtitle": "Choose how you want to connect with me",
+    "client": "I need a project",
+    "recruiter": "I'm a company / recruiter",
+    "footer": "Developed by"
+  },
+
+  "dev": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "experience": "Experience",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "intro": {
+      "greeting": "Hi, I'm:",
+      "name": "Ayran Vieira",
+      "description": "Full Stack Developer with hands-on experience in React, TypeScript, Java and Spring Boot, building modern interfaces and robust APIs in production. I enjoy turning complex business problems into scalable, well-structured solutions, combining attention to technical detail with a focus on real impact for users and the business.",
+      "roles": [
+        "Full Stack Developer",
+        "React · TypeScript · Spring Boot",
+        "Scalable solutions for real businesses"
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "items": [
+        {
+          "role": "Full Stack Developer",
+          "company": "ABMTI — Information Technology",
+          "period": "May 2026 – Present",
+          "bullets": [
+            "Full stack development of web modules with React, TypeScript and Spring Boot",
+            "Built filters, a Kanban board and user interaction dialogs",
+            "Direct technical support to users, triaging and resolving incidents"
+          ]
+        },
+        {
+          "role": "Freelance Web Developer",
+          "company": "Self-employed",
+          "period": "2024 – Present",
+          "bullets": [
+            "Built landing pages and portfolios with React.js and Tailwind CSS",
+            "Integrated REST APIs and MySQL databases",
+            "Developed responsive interfaces focused on usability"
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "name": "Full name*",
+      "namePlaceholder": "Enter your name",
+      "email": "Email*",
+      "emailPlaceholder": "Enter your email",
+      "phone": "Whatsapp*",
+      "phonePlaceholder": "Enter your whatsapp",
+      "message": "What's your message about?*",
+      "messagePlaceholder": "Type your message",
+      "submit": "Send",
+      "success": "Form submitted successfully!",
+      "error": "Error submitting the form!",
+      "connectionError": "Connection error!"
+    }
+  },
+
+  "client": {
+    "hero": {
+      "brandName": "Ayran Vieira",
+      "brandTag": "Digital Solutions",
+      "title": "Websites, portfolios & custom systems",
+      "subtitle": "Modern digital presence and systems that organize your operation — built around your business right now.",
+      "price": "Plans starting at $79",
+      "socialProof": "Entrepreneurs are already modernizing their businesses.",
+      "whatsappMessage": "Hi! I'd like to request a quote for a website."
+    },
+
+    "offers": {
+      "title": "How I can help",
+      "subtitle": "Three lines of work. Pick the one that fits where your business is right now.",
+      "items": {
+        "sites": {
+          "title": "Websites & Landing Pages",
+          "pitch": "For anyone who needs a fast, professional online presence built to turn visitors into customers.",
+          "tags": ["Responsive", "SEO", "WhatsApp integration"],
+          "cta": "I want a website",
+          "whatsappMessage": "Hi! I'm interested in a website or landing page for my business."
+        },
+        "portfolios": {
+          "title": "Professional Portfolios",
+          "pitch": "For anyone who wants to stand out in hiring processes or win clients by showcasing their own work.",
+          "tags": ["Custom design", "Multilingual", "Ready to share"],
+          "cta": "I want a portfolio",
+          "whatsappMessage": "Hi! I'm interested in a professional portfolio."
+        },
+        "systems": {
+          "title": "Management Systems",
+          "pitch": "For businesses that have outgrown spreadsheets and need their own dashboard to run operations.",
+          "tags": ["Custom dashboard", "Automation", "Cross-platform access"],
+          "cta": "I want a system",
+          "whatsappMessage": "Hi! I'm interested in a management system for my business."
+        }
+      }
+    },
+
+    "benefits": {
+      "professional": {
+        "title": "Professional presence",
+        "text": "Strategic design that strengthens your brand and builds instant trust."
+      },
+      "responsive": {
+        "title": "Fully responsive",
+        "text": "Perfect experience across mobile, tablet and desktop."
+      },
+      "performance": {
+        "title": "High performance",
+        "text": "Fast, lightweight and optimized websites for the best user experience."
+      }
+    },
+
+    "cta": {
+      "button": "Request a quote",
+      "trust": "Fast response • Personalized service"
+    },
+
+    "about": {
+      "title": "About AV Digital Solutions",
+      "description1": "We develop modern digital solutions for businesses that want to grow, attract customers and stand out online.",
+      "description2": "We create websites, systems and digital experiences focused on performance, design and real results for your business.",
+      "footer": "Technology applied with a focus on growth.",
+
+      "pillars": {
+        "technology": {
+          "title": "Technology",
+          "description": "Modern solutions with high performance and scalability."
+        },
+        "design": {
+          "title": "Design",
+          "description": "Elegant interfaces focused on user experience and conversion."
+        },
+        "strategy": {
+          "title": "Strategy",
+          "description": "Decisions designed to generate real results."
+        }
+      }
+    },
+
+    "services": {
+      "title": "Digital solutions",
+
+      "items": {
+        "institutional": {
+          "title": "Business Websites",
+          "description": "Professional digital presence to build authority for your company."
+        },
+        "ecommerce": {
+          "title": "E-commerce",
+          "description": "Sell your products online with performance and security."
+        },
+        "landing": {
+          "title": "Landing Pages",
+          "description": "High-conversion pages for campaigns and ads."
+        },
+        "portfolio": {
+          "title": "Portfolios",
+          "description": "Showcase your work in a professional and attractive way."
+        },
+        "bots": {
+          "title": "WhatsApp & Telegram Bots",
+          "description": "Automate customer service and increase your sales."
+        },
+        "systems": {
+          "title": "Custom Systems",
+          "description": "Custom-built systems to automate processes and scale your business."
+        }
+      }
+    },
+
+    "projects": {
+      "title": "In practice",
+      "subtitle": "A few real projects already live — proof that these solutions actually work.",
+
+      "items": {
+        "portfolio": {
+          "title": "Professional Portfolio",
+          "problem": "Professionals struggle to stand out due to the lack of a structured and convincing digital presence.",
+          "solution": "Development of a modern, responsive and strategic portfolio designed to showcase skills, projects and generate professional opportunities.",
+          "benefits": [
+            "Stronger market positioning",
+            "More opportunities and qualified leads",
+            "Clear and professional presentation of skills"
+          ],
+          "whatsappMessage": "Hi! I'd like to build a professional portfolio.",
+          "buttons": {
+            "visit": "Visit website",
+            "request": "Request project"
+          }
+        },
+
+        "sonatta": {
+          "title": "Professional Website (Sonatta)",
+          "problem": "Event band struggling to present their work professionally and build trust to close deals.",
+          "solution": "Development of a modern institutional website for the Sonatta band, highlighting experience and making it easier for clients to get in touch.",
+          "benefits": [
+            "Increased credibility to close deals",
+            "Professional presentation for events",
+            "Easier contact with potential clients"
+          ],
+          "whatsappMessage": "Hi! I'd like a professional website for my business.",
+          "buttons": {
+            "visit": "Visit website",
+            "request": "Request project"
+          }
+        },
+
+        "system": {
+          "title": "Web System (Flight On Time)",
+          "problem": "Passengers face uncertainty and lack of information about possible flight delays.",
+          "solution": "Application designed to help passengers predict possible flight delays, providing more predictability and better travel planning.",
+          "benefits": [
+            "Better travel predictability",
+            "Reduced uncertainty for passengers",
+            "Improved schedule planning"
+          ],
+          "whatsappMessage": "Hi! I'd like a custom system.",
+          "buttons": {
+            "visit": "View system",
+            "request": "Request system"
+          }
+        },
+        "emily": {
+          "title": "Digital Invite & RSVP Dashboard",
+          "problem": "Tracking event RSVPs over WhatsApp and spreadsheets turns messy fast.",
+          "solution": "A custom invitation site with online RSVP and a real-time dashboard for the organizer to keep track of everything, built with React and Supabase.",
+          "benefits": [
+            "Frictionless RSVP experience for guests",
+            "Dashboard with stats on adults, children and gifts",
+            "One-click guest list export"
+          ],
+          "whatsappMessage": "Hi! I'm interested in a digital invite with RSVP for my event.",
+          "buttons": {
+            "visit": "View invite",
+            "request": "Request mine"
+          }
+        }
+      }
+    }
+  },
+
+  "about": {
+    "title": "Skills",
+    "subtitle": "Technologies and skills focused on solving real problems.",
+    "soft": {
+      "title": "Soft Skills",
+      "skills": [
+        {
+          "title": "Clear Communication",
+          "description": "I communicate technical ideas clearly to align teams effectively."
+        },
+        {
+          "title": "Problem Solving",
+          "description": "I analyze scenarios, identify root causes and implement efficient solutions."
+        },
+        {
+          "title": "Continuous Learning",
+          "description": "Constant growth through studying new technologies and best practices."
+        },
+        {
+          "title": "Collaboration",
+          "description": "Experience working on full stack projects with multidisciplinary teams."
+        },
+        {
+          "title": "Adaptability",
+          "description": "Flexible with scope changes and new tools."
+        },
+        {
+          "title": "Proactivity",
+          "description": "Anticipating needs and continuously improving."
+        },
+        {
+          "title": "Time Management",
+          "description": "Organized using methods like Pomodoro and priority lists."
+        }
+      ],
+
+      "buttons": {
+        "linkedin": "LinkedIn",
+        "profile": "Big Five"
+      }
+    },
+
+    "hard": {
+      "title": "Hard Skills",
+      "skills": [
+        {
+          "title": "React.js",
+          "description": "Modern, reactive interfaces built with React.js and TypeScript."
+        },
+        {
+          "title": "TypeScript",
+          "description": "Static typing for safer, more maintainable applications."
+        },
+        {
+          "title": "Java & Spring Boot",
+          "description": "Secure, robust and scalable REST APIs."
+        },
+        {
+          "title": "Spring Security",
+          "description": "Authentication and authorization for enterprise APIs."
+        },
+        {
+          "title": "TanStack Query & Router",
+          "description": "Efficient async state management and routing in React apps."
+        },
+        {
+          "title": "Tailwind CSS",
+          "description": "Agile, responsive and consistent design systems."
+        },
+        {
+          "title": "Node.js & Express",
+          "description": "Back-end APIs and services in JavaScript."
+        },
+        {
+          "title": "PostgreSQL & MySQL",
+          "description": "Relational data modeling and persistence."
+        },
+        {
+          "title": "Docker",
+          "description": "Containerizing applications for consistent environments."
+        },
+        {
+          "title": "Git & GitHub",
+          "description": "Version control and collaboration across dev teams."
+        },
+        {
+          "title": "Scrum & CI/CD",
+          "description": "Continuous delivery and agile project organization."
+        }
+      ],
+
+      "buttons": {
+        "github": "GitHub",
+        "resume": "Resume"
+      }
+    }
+  },
+
+  "projects": {
+    "justina": {
+      "title": "Justina Virtual",
+      "description": "Medical virtual assistant built with React and integrated with a Java Spring Boot backend."
+    },
+    "flightOnTime": {
+      "title": "Flight On Time",
+      "description": "MVP developed in a hackathon to predict flight delay probabilities."
+    },
+    "sonatta": {
+      "title": "Sonatta Music Website",
+      "description": "Institutional website for the Sonatta band."
+    },
+    "portfolio": {
+      "title": "Technical Portfolio",
+      "description": "Portfolio built with React and Tailwind."
+    },
+    "emily": {
+      "title": "Digital Invite & RSVP Dashboard",
+      "description": "Custom invitation site with real-time RSVP and an admin dashboard (React + Supabase) to manage guests and gifts."
+    },
+    "buttons": {
+      "application": "Application",
+      "code": "Code",
+      "docs": "Docs",
+      "panel": "Admin Dashboard"
+    }
+  }
+}
