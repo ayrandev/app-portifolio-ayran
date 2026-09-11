@@ -28,7 +28,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={project.id}
-            className="reveal"
+            className="reveal h-full"
             style={{ "--delay": `${index * 0.1}s` }}
           >
             <ProjectCard
@@ -36,7 +36,8 @@ export default function Projects() {
               Icon={project.icon}
               title={project.title}
               description={project.description}
-              className="h-[320px] sm:h-[360px]"
+              stack={project.stack}
+              domain={project.domain}
               Buttons={
                 <>
                   {project.buttons.map((btn, idx) => (

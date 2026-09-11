@@ -9,10 +9,34 @@ import FlightOnTime from "../../assets/FlightOnTime.jpeg";
 import EmilyWebPainel from "../../assets/EmilyWebPainel.jpg";
 
 const PROJECTS = [
-  { key: "portfolio", image: Portifolio, link: "https://SEUPORTFOLIO.vercel.app" },
-  { key: "sonatta", image: SonattaSite, link: "https://sonattamusic.vercel.app" },
-  { key: "system", image: FlightOnTime, link: "https://tech-flight.vercel.app/" },
-  { key: "emily", image: EmilyWebPainel, link: "https://emilyweb-three.vercel.app/" },
+  {
+    key: "portfolio",
+    image: Portifolio,
+    link: "https://ayran-vieira-dev.vercel.app/",
+    domain: "ayran-vieira-dev.vercel.app",
+    stack: ["React", "Tailwind"],
+  },
+  {
+    key: "sonatta",
+    image: SonattaSite,
+    link: "https://sonattamusic.vercel.app",
+    domain: "sonattamusic.vercel.app",
+    stack: ["React", "Tailwind"],
+  },
+  {
+    key: "system",
+    image: FlightOnTime,
+    link: "https://tech-flight.vercel.app/",
+    domain: "tech-flight.vercel.app",
+    stack: ["Java", "React", "Tailwind"],
+  },
+  {
+    key: "emily",
+    image: EmilyWebPainel,
+    link: "https://emilyweb-three.vercel.app/",
+    domain: "emilyweb-three.vercel.app",
+    stack: ["React", "Supabase", "Tailwind"],
+  },
 ];
 
 export default function Projects() {
@@ -39,7 +63,17 @@ export default function Projects() {
               key={project.key}
               className="bg-surface backdrop-blur-xl border border-line rounded-2xl p-6 flex flex-col shadow-xl hover:border-accent transition-all duration-300 hover:-translate-y-1"
             >
-              <div className="overflow-hidden rounded-xl mb-6">
+              <div className="relative overflow-hidden rounded-xl mb-6">
+                {/* Barra de navegador */}
+                <div className="absolute top-0 inset-x-0 z-10 flex items-center gap-1.5 px-3 h-7 bg-black/70 backdrop-blur-sm">
+                  <span className="w-2 h-2 rounded-full bg-red-400/80" />
+                  <span className="w-2 h-2 rounded-full bg-yellow-400/80" />
+                  <span className="w-2 h-2 rounded-full bg-green-400/80" />
+                  <span className="ml-2 text-[10px] font-mono text-white/50 truncate">
+                    {project.domain}
+                  </span>
+                </div>
+
                 <img
                   src={project.image}
                   alt={project.key}
@@ -60,7 +94,7 @@ export default function Projects() {
                   {t(`client.projects.items.${project.key}.solution`)}
                 </p>
 
-                <ul className="text-subtle text-sm space-y-2 mb-6">
+                <ul className="text-subtle text-sm space-y-2 mb-4">
                   {t(`client.projects.items.${project.key}.benefits`, { returnObjects: true }).map(
                     (item, i) => (
                       <li key={i} className="flex gap-2">
@@ -70,6 +104,17 @@ export default function Projects() {
                     )
                   )}
                 </ul>
+
+                <div className="flex flex-wrap gap-1.5 mb-6">
+                  {project.stack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="text-[10px] font-mono text-accent bg-accent/10 border border-accent/20 rounded px-1.5 py-0.5"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
 
               <div className="flex flex-col sm:flex-row justify-center gap-3">

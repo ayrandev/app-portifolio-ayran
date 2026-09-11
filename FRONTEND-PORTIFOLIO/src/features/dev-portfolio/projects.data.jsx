@@ -2,7 +2,6 @@ import { FaGithub, FaBook, FaClipboardList } from "react-icons/fa";
 import { MdLaptopChromebook } from "react-icons/md";
 
 import SonattaSite from "../../assets/sonatta_site.jpeg";
-import Portifolio from "../../assets/Portifolio-tecnico.jpeg";
 import FlightOnTime from "../../assets/FlightOnTime.jpeg";
 import JustinaVirtual from "../../assets/JustinaVirtual.jpeg";
 import EmilyWebPainel from "../../assets/EmilyWebPainel.jpg";
@@ -13,6 +12,8 @@ const projects = [
     image: JustinaVirtual,
     title: "projects.justina.title",
     description: "projects.justina.description",
+    domain: "justina-virtual.vercel.app",
+    stack: ["React", "Java", "Spring Boot"],
     buttons: [
       {
         name: "projects.buttons.application",
@@ -42,6 +43,8 @@ const projects = [
     image: FlightOnTime,
     title: "projects.flightOnTime.title",
     description: "projects.flightOnTime.description",
+    domain: "tech-flight.vercel.app",
+    stack: ["Java", "React", "Tailwind", "Axios"],
     buttons: [
       {
         name: "projects.buttons.application",
@@ -70,6 +73,8 @@ const projects = [
     image: SonattaSite,
     title: "projects.sonatta.title",
     description: "projects.sonatta.description",
+    domain: "sonattamusic.vercel.app",
+    stack: ["React", "Tailwind"],
     buttons: [
       {
         name: "projects.buttons.application",
@@ -79,29 +84,12 @@ const projects = [
     ],
   },
   {
-    id: 4,
-    image: Portifolio,
-    title: "projects.portfolio.title",
-    description: "projects.portfolio.description",
-    buttons: [
-      {
-        name: "projects.buttons.application",
-        icon: <MdLaptopChromebook />,
-        action: () => window.open("https://ayran-vieira-dev.vercel.app/", "_blank"),
-      },
-      {
-        name: "projects.buttons.code",
-        icon: <FaGithub />,
-        action: () =>
-          window.open("https://github.com/ayrandev/app-portifolio-ayran", "_blank"),
-      },
-    ],
-  },
-  {
     id: 5,
     image: EmilyWebPainel,
     title: "projects.emily.title",
     description: "projects.emily.description",
+    domain: "emilyweb-three.vercel.app",
+    stack: ["React", "Supabase", "Tailwind"],
     buttons: [
       {
         name: "projects.buttons.application",
